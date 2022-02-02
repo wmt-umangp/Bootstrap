@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Web Layout Exercise</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <style>
+        .dnow-regionsContent {
+            background-color: SlateGray;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            opacity: 0.8;
+        }
+
+        .dnow-regionsContent .card-img-overlay img {
+            max-height: 40rem;
+        }
+
+        .header_image {
+            background-size: cover;
+        }
+
+        .overlay-div {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            background-color: #000;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">WebMob technologies</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto  mb-2 mb-lg-0">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown mx-3">
+                            <a class="nav-link text-white" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Pages
+                                <i class='fas fa-angle-down' style='font: size 15px;'></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Page1</a></li>
+                                <li><a class="dropdown-item" href="#">page2</a></li>
+                                <li><a class="dropdown-item" href="#">page3</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item mx-3 dropdown">
+                            <a class="nav-link text-white" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Support
+                                <i class='fas fa-angle-down' style='font: size 15px;'></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Support1</a></li>
+                                <li><a class="dropdown-item" href="#">Support2</a></li>
+                                <li><a class="dropdown-item" href="#">Support3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-primary mx-2">Login</button>
+                            <button type="button" class="btn btn-light text-primary mx-2">Sign up</button>
+                            <button type="button" class="btn btn-outline-light text-secondary mx-2"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-plus" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                </svg> List a space</button>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="sticky-top bg-white hidden-spacer"> </div>
+
+
+    <section class="dnow-regionsWrap">
+        <div class="dnow-regionsContent">
+            <div class="card bg-dark text-white">
+                <img src="https://www.dropbox.com/s/9fvw247x7ml90mf/canadaN.jpg?dl=1" class="header_image" alt="canada">
+                <div class="overlay-div"></div>
+                <div class="card-img-overlay d-flex align-items-center container">
+                    <div class="row mb-5">
+                        <div class=" col-sm-12 text-content">
+                            <h1 class="dispaly-2 text-center">Find Your Perfect <b>coworking</b> space</h1>
+                            <h3 class="text-center text-secondary">12,000+ coworking space with desks, offices & meeting
+                                rooms in 165+
+                                countries.</h3>
+                            <h3 class="text-center text-secondary">Discover and reserve space today.</h3>
+                        </div>
+                        <div class="col-sm-12 mt-5">
+                            <div class="card p-md-2">
+                                <div class="card-body">
+                                    <form class="row g-3">
+                                        <div class="col-lg-5">
+                                            <div class="input-group">
+                                                <span class="input-group-text">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                                    </svg></span>
+                                                <input type="text" class="form-control" placeholder="Search Location">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <div class="input-group">
+                                                <span class="input-group-text">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-calendar-check"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0z" />
+                                                        <path
+                                                            d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                                                    </svg>
+                                                </span>
+                                                <input type="text" class="form-control" placeholder="Search date">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-2 text-center">
+                                            <button type="button" class="btn btn-primary">Find a desk</button>
+                                        </div>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- <div class="row mt-5 mb-5">
+                        
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="container">
+        <!-- <div class="row w-100 justify-content-center mb-4 mb-xl-5"
+            style="position: absolute;top:30%;left:50%;transform: translate(-50%,-50%);">
+            <div class="col-12 col-xl-10 text-dark text-center">
+                
+            </div>
+        </div> -->
+        <!-- 
+        <div class="row mb-5" style="position: absolute;top:60%;left:50%;transform: translate(-50%,-50%);">
+            
+        </div> -->
+
+        <div class="row mt-5 mb-5">
+            <div class="col-12 col-sm-6 col-md-3 text-center mt-4">
+                <i class="fas fa-clock text-primary" style="font-size:100px;"></i>
+                <h6 class="mt-2 text-secondary">24 Hr Access</h6>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 text-center mt-4">
+                <i class="fas fa-tachometer-alt text-primary" style="font-size: 100px;"></i>
+                <h6 class="mt-2 text-secondary">Fast Internet</h6>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 text-center mt-4">
+                <i class="fas fa-user-tie text-primary" style="font-size: 100px;"></i>
+                <h6 class="mt-2 text-secondary">Good Workers</h6>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3 text-center mt-4">
+                <i class="fas fa-city text-primary" style="font-size: 100px;"></i>
+                <h6 class="mt-2 text-secondary">Modern Building</h6>
+            </div>
+        </div>
+
+        <div class="row mt-5 mb-5 g-5">
+            <div class="col-12 col-sm-6 col-md-4 text-wrap">
+                <h1>Explore our <b>available</b> office spaces.</h1>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <p class="text-secondary">Coworking is not only about the physical place, but about establishing the
+                    coworking community first. Its benefits can already be experienced outside of its places, and its
+                    recommended</p>
+                <p class="mt-3 text-secondary">To start with building a coworking community first before considering
+                    opening a Coworking place.</p>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4">
+                <p class="text-secondary">However, some coworkng places don,t build a community: they just get a part of
+                    an existing one by combining their opening With</p>
+                <p class="mt-3 text-secondary">An event which attracts their target group. Real-estate centric coworking
+                    spaces are about selling desks first, with building community as a secondary goal.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <div class="card h-100 rounded border  border-light shadow-lg">
+                    <div class="card-body">
+                        <div class="d-block d-md-flex mt-3 mx-3 justify-content-between">
+                            <div>
+                                <p class="text-secondary">Space occupancy level</p>
+                            </div>
+                            <div>
+                                <p class="text-secondary">85%</p>
+                            </div>
+                        </div>
+                        <div class="progress" style="height: 0.5rem;">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                            </div>
+                        </div>
+
+                        <div class="d-block d-md-flex mt-5 justify-content-between align-items-center">
+                            <div>
+                                <h3>Book Your tour experience today!</h3>
+                                <p>Schedule a tour, make an appointment to rent space at Themesberg, or ask for more
+                                    information.</p>
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn-primary align-self-center">schedule a tour</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-5">
+            <div class="col-12">
+                <h3 class="mb-5">Top Cities</h3>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
+                <div class="card">
+                    <img src="https://demo.themesberg.com/spaces/assets/img/newyork.jpg" alt="Newyork"
+                        class="card-img-top">
+                    <p class="carousel-caption text-center top-50 h3">New york</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
+                <div class="card">
+                    <img src="https://demo.themesberg.com/spaces/assets/img/paris.jpg" alt="Paris" class="card-img-top">
+                    <p class="carousel-caption text-center top-50 h3">Paris</p>
+                </div>
+
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
+                <div class="card">
+                    <img src="https://demo.themesberg.com/spaces/assets/img/london.jpg" alt="London"
+                        class="card-img-top">
+                    <p class="carousel-caption text-center top-50 h3">London</p>
+                </div>
+
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
+                <div class="card">
+                    <img src="https://demo.themesberg.com/spaces/assets/img/tokyo.jpg" alt="Tokyo" class="card-img-top">
+                    <p class="carousel-caption text-center top-50 h3">Tokyo</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row g-4 mt-5">
+            <div class="col-12">
+                <h3 class="mb-5">Trending Spaces</h3>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-lg">
+                    <img src="https://demo.themesberg.com/spaces/assets/img/image-office.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Collabrative Workspace</h5>
+                        <i class="fas fa-map-marker-alt"></i><span class="ms-2">New York, Manhattan, USA</span>
+
+                        <div class="d-flex my-4">
+                            <span class="star fas fa-star text-warning"></span>
+                            <span class="star fas fa-star text-warning"></span>
+                            <span class="star fas fa-star text-warning"></span>
+                            <span class="star fas fa-star text-warning"></span>
+                            <span class="star fas fa-star text-warning"></span>
+                            <span class="badge rounded-pill bg-success ms-2">5.0</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="col">
+                                <span class="text-muted d-block mb-2">Monthly</span>
+                                <span class="h5 text-dark font-weight-bold">2100$</span>
+                            </div>
+                            <div class="col">
+                                <span class="text-muted  d-block mb-2">People</span>
+                                <span class="h5 text-dark font-weight-bold">12</span>
+                            </div>
+                            <div class="col">
+                                <span class="text-muted  d-block mb-2">Sq. Ft</span>
+                                <span class="h5 text-dark font-weight-bold">1200</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-lg">
+                    <img src="https://demo.themesberg.com/spaces/assets/img/cowork-office.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Coworking Workspace</h5>
+                        <i class="fas fa-map-marker-alt"></i><span class="ms-2">Bucharest, Sector 2, Romania</span>
+
+                        <div class="d-flex my-4">
+                            <span class="star fas fa-star text-warning"></span>
+                            <span class="star fas fa-star text-warning"></span>
+                            <span class="star fas fa-star text-warning"></span>
+                            <span class="star fas fa-star text-secondary"></span>
+                            <span class="star fas fa-star text-secondary"></span>
+                            <span class="badge rounded-pill bg-success ms-2">3.0</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="col">
+                                <span class="text-muted  d-block mb-2">Monthly</span>
+                                <span class="h5 text-dark font-weight-bold">300$</span>
+                            </div>
+                            <div class="col">
+                                <span class="text-muted  d-block mb-2">People</span>
+                                <span class="h5 text-dark font-weight-bold">24</span>
+                            </div>
+                            <div class="col">
+                                <span class="text-muted  d-block mb-2">Sq. Ft</span>
+                                <span class="h5 text-dark font-weight-bold">3000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-lg">
+                    <img src="https://demo.themesberg.com/spaces/assets/img/meeting-office.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Meeting Office Space</h5>
+                        <i class="fas fa-map-marker-alt"></i><span class="ms-2">London, Canary Wharf, UK</span>
+
+                        <div class="d-flex my-4">
+                            <span class="star fas fa-star text-warning"></span>
+                            <span class="star fas fa-star text-warning"></span>
+                            <span class="star fas fa-star text-warning"></span>
+                            <span class="star fas fa-star text-warning"></span>
+                            <span class="star fas fa-star text-secondary"></span>
+                            <span class="badge rounded-pill bg-success ms-2">4.0</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="col">
+                                <span class="text-muted  d-block mb-2">Hourly</span>
+                                <span class="h5 text-dark font-weight-bold">50$</span>
+                            </div>
+                            <div class="col">
+                                <span class="text-muted  d-block mb-2">People</span>
+                                <span class="h5 text-dark font-weight-bold">3-5</span>
+                            </div>
+                            <div class="col">
+                                <span class="text-muted d-block mb-2">Sq. Ft</span>
+                                <span class="h5 text-dark font-weight-bold">400</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-lg">
+                    <img src="https://demo.themesberg.com/spaces/assets/img/conference-office.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Conference Room</h5>
+                        <i class="fas fa-map-marker-alt"></i><span class="ms-2">Paris, La Defense, France</span>
+
+                        <div class="d-flex my-4">
+                            <span class="star fas fa-star text-warning"></span>
+                            <span class="star fas fa-star text-warning"></span>
+                            <span class="star fas fa-star text-warning"></span>
+                            <span class="star fas fa-star text-warning"></span>
+                            <span class="star fas fa-star text-warning"></span>
+                            <span class="badge rounded-pill bg-success ms-2">4.7</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="col">
+                                <span class="text-muted  d-block mb-2">Hourly</span>
+                                <span class="h5 text-dark font-weight-bold">100$</span>
+                            </div>
+                            <div class="col">
+                                <span class="text-muted  d-block mb-2">People</span>
+                                <span class="h5 text-dark font-weight-bold">2-20</span>
+                            </div>
+                            <div class="col">
+                                <span class="text-muted  d-block mb-2">Sq. Ft</span>
+                                <span class="h5 text-dark font-weight-bold">200</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-lg">
+                    <img src="https://demo.themesberg.com/spaces/assets/img/lifestyle-office.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Lifestyle Space</h5>
+                        <i class="fas fa-map-marker-alt"></i><span class="ms-2">Madrid, Hortaleza, Spain</span>
+
+                        <div class="d-flex my-4">
+                            <span class="star fas fa-star text-warning"></span>
+                            <span class="star fas fa-star text-warning"></span>
+                            <span class="star fas fa-star text-warning"></span>
+                            <span class="star fas fa-star text-warning"></span>
+                            <span class="star fas fa-star text-warning"></span>
+                            <span class="badge rounded-pill bg-success ms-2">5.0</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="col">
+                                <span class="text-muted  d-block mb-2">Daily</span>
+                                <span class="h5 text-dark font-weight-bold">350$</span>
+                            </div>
+                            <div class="col">
+                                <span class="text-muted  d-block mb-2">People</span>
+                                <span class="h5 text-dark font-weight-bold">10-25</span>
+                            </div>
+                            <div class="col">
+                                <span class="text-muted  d-block mb-2">Sq. Ft</span>
+                                <span class="h5 text-dark font-weight-bold">100</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-4">
+                <div class="card h-100 shadow-lg">
+                    <img src="https://demo.themesberg.com/spaces/assets/img/private-office.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5>Private Space</h5>
+                        <i class="fas fa-map-marker-alt"></i><span class="ms-2">Budapest, Ferencvaros, Hungary</span>
+                        <div class="d-flex my-4">
+                            <span class="star fas fa-star text-warning"></span>
+                            <span class="star fas fa-star text-warning"></span>
+                            <span class="star fas fa-star text-warning"></span>
+                            <span class="star fas fa-star text-warning"></span>
+                            <span class="star fas fa-star text-secondary"></span>
+                            <span class="badge rounded-pill bg-success ms-2">4.0</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <div class="col">
+                                <span class="text-muted  d-block mb-2">Monthly</span>
+                                <span class="h5 text-dark font-weight-bold">100$</span>
+                            </div>
+                            <div class="col">
+                                <span class="text-muted  d-block mb-2">People</span>
+                                <span class="h5 text-dark font-weight-bold">1</span>
+                            </div>
+                            <div class="col">
+                                <span class="text-muted  d-block mb-2">Sq. Ft</span>
+                                <span class="h5 text-dark font-weight-bold">10</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mt-lg-6 mt-5 d-flex flex-column text-center">
+                <div><a href="#" class="btn btn-primary">Browse All</a></div>
+                <span class="mt-2">142 spaces in 6 countries</span>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="bg-light mt-5">
+        <div class="container">
+            <div class="row justify-content-center mb-4 mb-lg-5">
+                <div class="col-12 col-md-8 text-center mt-5">
+                    <h2 class="h1"><span class="font-weight-bold">How</span> it works?</h2>
+                    <p class="lead mt-3">All you’ll need are the details of the building and location, the types of
+                        space, pricing and some good quality photographs.</p>
+                    <button type="button" class="btn btn-outline-dark mt-2  text-primary ms-auto">
+                        <i class="fas fa-building"></i>
+                        <span>Find Your Space</span>
+                    </button>
+                    <button type="button" class="btn btn-outline-primary mt-2 ms-auto text-dark">
+                        <i class="far fa-money-bill-alt"></i>
+                        <span>Submit Your Space</span>
+                    </button>
+                </div>
+            </div>
+            <!-- <div class="row">
+                <div class="col-12 col-lg-6 d-flex justify-content-center">
+                   
+                </div>
+                <div class="col-12 col-lg-6">
+
+                </div>
+            </div> -->
+            <div class="row g-2">
+                <div class="col-12">
+                    <div>
+                        <div>
+                            <div class="row g-3">
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card h-100 border-light mb-4 mb-lg-0 text-center">
+                                        <div class="card-body p-4 px-xl-4 py-xl-6">
+                                            <div>
+                                                <span class="fas fa-search"
+                                                    style="font-size: 2.0em;width:2.0em;text-align: center;line-height: 2.0em;background: #D0DFF7;color: #355BD4;border-radius: 1em;"></span>
+                                            </div>
+                                            <h3 class="h5 my-3">1. Choose a workspace</h3>
+                                            <p>It takes no longer than 15 minutes to list your space on themesberg.
+                                                Our user friendly process.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card h-100 border-light mb-4 mb-lg-0 text-center">
+                                        <div class="card-body p-4 px-xl-4 py-xl-6">
+                                            <div>
+                                                <span class="far fa-calendar-check"
+                                                    style="font-size: 2.0em;width:2.0em;text-align: center;line-height: 2.0em;background: #D0DFF7;color: #355BD4;border-radius: 1em;"></span>
+                                            </div>
+                                            <h3 class="h5 my-3">2. Schedule a tour</h3>
+                                            <p>After you have uploaded your space - our website makes it easy for
+                                                you to keep the details up to date.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <div class="card h-100 border-light mb-4 mb-lg-0 text-center">
+                                        <div class="card-body p-4 px-xl-4 py-xl-6">
+                                            <div>
+                                                <span class="fas fa-mouse-pointer"
+                                                    style="font-size: 2.0em;width:2.0em;text-align: center;line-height: 2.0em;background: #D0DFF7;color: #355BD4;border-radius: 1em;"></span>
+                                            </div>
+                                            <h3 class="h5 my-3">3. Book your workspace</h3>
+                                            <p>Orders coming from themesberg are 100% prepaid. We will bring you not
+                                                just leads but new clients.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mt-lg-6 mt-3 text-center mb-5"><a href="#" class="btn btn-primary"><i
+                                        class="fas fa-search-location mr-2"></i>Find a Location</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row mt-5">
+            <div class="col-12 mt-5">
+                <p class="lead display-6 text-center">Choose a <b>plan</b> for your space</p>
+                <p class="lead text-center">Upgrade your space for higher rankings, powerful features & more ways to
+                    connect with potential customers.</p>
+            </div>
+        </div>
+        <div class="row g-3 mt-5">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow-lg border-light">
+                    <div class="card-body">
+                        <p class="lead display-6 text-center">Free</p>
+                        <div class="card-text">
+                            <div class="text-center">
+                                <p class="text-primary"><sup style="vertical-align: text-top;">$</sup><span
+                                        class="display-2">0</span><sub class="text-secondary">/month</sub></p>
+                            </div>
+                        </div>
+                        <hr class="card-divider">
+                        <div class="card-body">
+                            <p class="lead">Get Listed in Directory:</p>
+                            <p><i class="fas fa-check-circle"></i> <span class="ms-2">Unlimited photos</span></p>
+                            <p><i class="fas fa-check-circle"></i> <span class="ms-2">Unlimited videos</span></p>
+                            <p><i class="fas fa-check-circle"></i> <span class="ms-2">Receive messages</span></p>
+                            <p><i class="fas fa-check-circle"></i> <span class="ms-2">Display your contact info</span>
+                            </p>
+
+                            <button type="button" class="btn btn-outline-primary text-center w-100 mt-4">
+                                <i class="fas fa-cart-plus"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow-lg border-light">
+                    <div class="card-body">
+                        <p class="lead display-6 text-center">Silver</p>
+                        <div class="card-text">
+                            <div class="text-center">
+                                <p class="text-primary"><sup style="vertical-align: text-top;">$</sup><span
+                                        class="display-2">19</span><sub class="text-secondary">/month</sub></p>
+                            </div>
+                        </div>
+                        <hr class="card-divider">
+                        <div class="card-body">
+                            <p class="lead">Everything in the Free Plan:</p>
+                            <p><i class="fas fa-check-circle"></i> <span class="ms-2">Rank booster</span></p>
+                            <p><i class="fas fa-check-circle"></i> <span class="ms-2">Lead capturing buttons</span></p>
+                            <p><i class="fas fa-check-circle"></i> <span class="ms-2">Connect your social media</span>
+                            </p>
+                            <p><i class="fas fa-check-circle"></i> <span class="ms-2">Display your contact info</span>
+                            </p>
+                            <p><i class="fas fa-check-circle"></i> <span class="ms-2">Link to your website</span></p>
+                            <p><i class="fas fa-check-circle"></i> <span class="ms-2"></span>Promote your best review
+                            </p>
+                            <p><i class="fas fa-check-circle"></i> <span class="ms-2"></span>Booking & Lead logs</p>
+                            <p><i class="fas fa-check-circle"></i> <span class="ms-2"></span>Priority customer support
+                            </p>
+
+                            <button type="button" class="btn btn-outline-primary text-center w-100 mt-4">
+                                <i class="fas fa-cart-plus"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="card shadow-lg border-light">
+                    <div class="card-body">
+                        <p class="lead display-6 text-center">Gold</p>
+                        <div class="card-text">
+                            <div class="text-center">
+                                <p class="text-primary"><sup style="vertical-align: text-top;">$</sup><span
+                                        class="display-2">49</span><sub class="text-secondary">/month</sub></p>
+                            </div>
+                        </div>
+                        <hr class="card-divider">
+                        <div class="card-body">
+                            <p class="lead">Everything in the other Plan:</p>
+                            <ul class="list-group list-group-flush border-light">
+                                <li class="list-group-item border-0" style='text-indent:-0.81em;'>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="ms-2">Appear at the top of your city's search page</span>
+                                </li>
+                                <li class="list-group-item border-0" style='text-indent:-0.81em;'>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="ms-2">Appear at the top of popular spaces page</span>
+                                </li>
+                                <li class="list-group-item border-0" style='text-indent:-0.81em;'>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="ms-2"></span>Receive a special "Popular Now" banner
+                                </li>
+                                <li class="list-group-item border-0" style='text-indent:-0.81em;'>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="ms-2"></span>A custom pin drop on the map
+                                </li>
+                                <li class="list-group-item border-0" style='text-indent:-0.81em;'>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="ms-2"></span>Spaces Instagram takeover(*annual subscriber)
+                                </li>
+                                <li class="list-group-item border-0" style='text-indent:-0.81em;'>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="ms-2"></span>Priority customer support and on boarding
+                                </li>
+                                <li class="list-group-item border-0" style='text-indent:-0.81em;'>
+                                    <i class="fas fa-check-circle"></i>
+                                    <span class="ms-2"></span>Advertising campaign
+                                </li>
+                            </ul>
+
+                            <button type="button" class="btn btn-outline-primary text-center w-100 mt-4">
+                                <i class="fas fa-cart-plus"></i>
+                                Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid bg-light mt-5">
+        <div class="container mt-5">
+            <div class="row justify-content-center align-items-center mt-5">
+                <div class="col-12 col-lg-9 text-center mt-5">
+                    <ul class="nav nav-pills mt-5 flex-sm-row justify-content-center" id="tab1">
+                        <li class="nav-item m-4">
+                            <a href="#review1" data-bs-toggle="tab" role="tab"
+                                class="nav-link active text-sm-center bg-light">
+                                <img src="https://demo.themesberg.com/spaces/assets/img/team/profile-picture-1.jpg"
+                                    width="80" height="80" class="rounded-circle" alt="Profile picture-1">
+                            </a>
+                        </li>
+                        <li class="nav-item m-4">
+                            <a href="#review2" data-bs-toggle="tab" role="tab" class="nav-link text-sm-center bg-light">
+                                <img src="https://demo.themesberg.com/spaces/assets/img/team/profile-picture-3.jpg"
+                                    width="80" height="80" class="rounded-circle" alt="Profile picture-2">
+                            </a>
+                        </li>
+                        <li class="nav-item m-4">
+                            <a href="#review3" data-bs-toggle="tab" role="tab" class="nav-link text-sm-center bg-light">
+                                <img src="https://demo.themesberg.com/spaces/assets/img/team/profile-picture-4.jpg"
+                                    width="80" height="80" class="rounded-circle" alt="Profile picture-3">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card bg-light border-0 mb-5">
+                <div class="card-body  p-0 mb-5">
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="review1" role="tabpanel">
+                            <span class="d-block text-center my-3">
+                                <span class="star fas fa-star text-warning"></span>
+                                <span class="star fas fa-star text-warning"></span>
+                                <span class="star fas fa-star text-warning"></span>
+                                <span class="star fas fa-star text-warning"></span>
+                                <span class="star fas fa-star text-warning"></span>
+                            </span>
+                            <blockquote class="blockquote bg-light p-0 p-md-4">I used Themesberg's logo creation
+                                services along with their website development services. They have been a
+                                pleasure to work with and have been responsive to all questions asked.
+                                <footer class="blockquote-footer mt-3 text-primary">Bonnie Green</footer>
+                            </blockquote>
+                        </div>
+                        <div class="tab-pane fade" id="review2" role="tabpanel">
+                            <span class="d-block text-center my-3">
+                                <span class="star fas fa-star text-warning"></span>
+                                <span class="star fas fa-star text-warning"></span>
+                                <span class="star fas fa-star text-warning"></span>
+                                <span class="star fas fa-star text-warning"></span>
+                                <span class="star fas fa-star text-warning"></span>
+                            </span>
+                            <blockquote class="blockquote bg-light p-0 p-md-4">I have worked with Themesberg
+                                over the years on a number of projects. I've always found them to be responsive,
+                                friendly and up-to-date with all the technology - which everyone knows is
+                                constantly changing.
+                                <footer class="blockquote-footer mt-3 text-primary">Neil Sims</footer>
+                            </blockquote>
+                        </div>
+                        <div class="tab-pane fade" id="review3" role="tabpanel">
+                            <span class="d-block text-center my-3">
+                                <span class="star fas fa-star text-warning"></span>
+                                <span class="star fas fa-star text-warning"></span>
+                                <span class="star fas fa-star text-warning"></span>
+                                <span class="star fas fa-star text-warning"></span>
+                                <span class="star fas fa-star text-warning"></span>
+                            </span>
+                            <blockquote class="blockquote bg-white p-0 p-md-4">Themesberg are the best in the
+                                business for website design and building. They worked hard to give us exactly
+                                what we wanted and more for our website and delivered on time. We would
+                                definitely use them again.
+                                <footer class="blockquote-footer mt-3 text-primary">
+                                    Christopher Wood
+                                </footer>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row mt-5">
+            <div class="col mt-5">
+                <p class="display-6 text-center">Are you ready for Spaces?</p>
+                <p class="text-center text-secondary">Check out our offers:</p>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col">
+                <table class="table table-borderless table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Features</th>
+                            <th scope="col">Standard License</th>
+                            <th scope="col">Extended License</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Create single websites for client</td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Create single personal website</td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td>6 months support included</td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Create multiple personal websites</td>
+                            <td><i class="fas fa-times text-danger"></i></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td>Create multiple websites for clients</td>
+                            <td><i class="fas fa-times text-danger"></i></i></td>
+                            <td><i class="fas fa-check text-success"></i></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><button type="button" class="btn btn-primary">Buy Standard License- $49</button></td>
+                            <td><button type="button" class="btn btn-outline-dark">Buy Extended License- $79</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <footer class="mt-5" style="background-color: #2A3550;">
+        <div class="container mt-5">
+            <div class="row mt-5">
+                <div class="col-xl-3  mb-3 py-5">
+                    <img src="https://seeklogo.com/images/B/bootstrap-logo-69A1CCC10B-seeklogo.com.png"
+                        alt="Bootstrap log" height="30" width="150">
+                    <p class="my-4 text-secondary">For those seeking the finest in services and technology in a downtown
+                        business center, without the high cost.</p>
+                    <i class="fab fa-twitter mx-2 text-white"></i>
+                    <i class="fab fa-facebook mx-2 text-white"></i>
+                    <i class="fab fa-github mx-2 text-white"></i>
+                    <i class="fab fa-google-plus-g mx-2 text-white"></i>
+                </div>
+                <div class="col-6 col-xl-2 mb-3 py-5">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item border-0 bg-transparent text-white">About Us</li>
+                        <li class="list-group-item border-0 bg-transparent text-secondary ">Blog</li>
+                        <li class="list-group-item border-0 bg-transparent text-secondary ">About Us</li>
+                        <li class="list-group-item border-0 bg-transparent text-secondary ">Products</li>
+                        <li class="list-group-item border-0 bg-transparent text-secondary ">Contact Us</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-xl-3 mb-3 py-5">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item border-0 bg-transparent text-white">Market</li>
+                        <li class="list-group-item border-0 bg-transparent text-secondary ">Sales FAQ</li>
+                        <li class="list-group-item border-0 bg-transparent text-secondary ">How to Register</li>
+                        <li class="list-group-item border-0 bg-transparent text-secondary ">Sell Goods</li>
+                        <li class="list-group-item border-0 bg-transparent text-secondary ">Receive Payment</li>
+                        <li class="list-group-item border-0 bg-transparent text-secondary ">Sell Goods</li>
+                        <li class="list-group-item border-0 bg-transparent text-secondary ">Receive Payment</li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-xl-4 mb-3 py-5">
+                    <p class="text-white">Subscribe</p>
+                    <p class="text-secondary">Join our mailing list. We write rarely, but only the best content.</p>
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control form-control-lg rounded-0"
+                                placeholder="Email Address">
+                        </div>
+                        <button type="submit" class="btn btn-success btn-lg w-100 rounded-0 mb-2">Subscribe</button>
+                        <small class="text-secondary">We'll never share your details, See our <small
+                                class="text-white">Privacy Policy</small></small>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col text-white text-center">
+                    <p>&copy; 2020 Themesberg. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>
