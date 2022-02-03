@@ -11,35 +11,38 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <style>
-        .dnow-regionsContent {
-            background-color: SlateGray;
-            position: relative;
-            width: 100%;
-            height: 100%;
-            opacity: 0.8;
-        }
-
-        .dnow-regionsContent .card-img-overlay img {
-            max-height: 40rem;
-        }
-
+        html,body{
+    overflow-x: hidden;
+}
         .header_image {
+            background-image: url("https://www.dropbox.com/s/9fvw247x7ml90mf/canadaN.jpg?dl=1");
             background-size: cover;
+            height: 100vh;
         }
 
-        .overlay-div {
-            height: 100%;
-            width: 100%;
-            position: absolute;
-            background-color: #000;
-            opacity: 0.7;
+        @media screen and (min-width:320px) and (max-width:991px) and (orientation: landscape) {
+            .font-custom {
+                font-size: 95%;
+            }
+
+            .container-custom,
+            .header_image {
+                height: 200vh;
+            }
+        }
+
+        @media screen and (max-width:575px){
+            .container-custom,
+            .header_image {
+                height: 220vh;
+            }   
         }
     </style>
 </head>
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">WebMob technologies</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -49,10 +52,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto  mb-2 mb-lg-0">
-                        <li class="nav-item mx-3">
+                        <li class="nav-item ms-3">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
-                        <li class="nav-item dropdown mx-3">
+                        <li class="nav-item dropdown ms-3">
                             <a class="nav-link text-white" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Pages
@@ -64,7 +67,7 @@
                                 <li><a class="dropdown-item" href="#">page3</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item mx-3 dropdown">
+                        <li class="nav-item ms-3 dropdown">
                             <a class="nav-link text-white" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Support
@@ -77,11 +80,11 @@
                             </ul>
                         </li>
                     </ul>
-                    <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
-                            <button type="button" class="btn btn-primary mx-2">Login</button>
-                            <button type="button" class="btn btn-light text-primary mx-2">Sign up</button>
-                            <button type="button" class="btn btn-outline-light text-secondary mx-2"><svg
+                            <button type="button" class="btn btn-primary ms-2">Login</button>
+                            <button type="button" class="btn btn-light text-primary ms-2">Sign up</button>
+                            <button type="button" class="btn btn-outline-light text-secondary ms-2"><svg
                                     xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-plus" viewBox="0 0 16 16">
                                     <path
@@ -94,28 +97,26 @@
             </div>
         </nav>
     </header>
-    <div class="sticky-top bg-white hidden-spacer"> </div>
 
-
-    <section class="dnow-regionsWrap">
-        <div class="dnow-regionsContent">
-            <div class="card bg-dark text-white">
-                <img src="https://www.dropbox.com/s/9fvw247x7ml90mf/canadaN.jpg?dl=1" class="header_image" alt="canada">
-                <div class="overlay-div"></div>
-                <div class="card-img-overlay d-flex align-items-center container">
-                    <div class="row mb-5">
-                        <div class=" col-sm-12 text-content">
-                            <h1 class="dispaly-2 text-center">Find Your Perfect <b>coworking</b> space</h1>
-                            <h3 class="text-center text-secondary">12,000+ coworking space with desks, offices & meeting
+    <div class="position-relative container-custom">
+        <div class="header_image">
+            <div class="container">
+                <div class="d-flex align-items-center container">
+                    <div class="row mt-5">
+                        <div class=" col-sm-12 mt-5">
+                            <h1 class="font-custom dispaly-2 text-center">Find Your Perfect <b>coworking</b> space</h1>
+                            <h3 class="font-custom text-center text-secondary">12,000+ coworking space with desks,
+                                offices & meeting
                                 rooms in 165+
                                 countries.</h3>
-                            <h3 class="text-center text-secondary">Discover and reserve space today.</h3>
+                            <h3 class="font-custom text-center text-secondary">Discover and reserve space today.</h3>
                         </div>
-                        <div class="col-sm-12 mt-5">
-                            <div class="card p-md-2">
+                        <div class="col mt-5">
+                            <div class="card card-custom p-md-2">
                                 <div class="card-body">
                                     <form class="row g-3">
-                                        <div class="col-lg-5">
+                                        <div class="col-md-5 col-lg-5">
+
                                             <div class="input-group">
                                                 <span class="input-group-text">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -126,7 +127,7 @@
                                                 <input type="text" class="form-control" placeholder="Search Location">
                                             </div>
                                         </div>
-                                        <div class="col-lg-5">
+                                        <div class="col-md-5 col-lg-5">
                                             <div class="input-group">
                                                 <span class="input-group-text">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
@@ -141,22 +142,21 @@
                                                 <input type="text" class="form-control" placeholder="Search date">
                                             </div>
                                         </div>
-                                        <div class="col-lg-2 text-center">
+                                        <div class="col-md-2 col-lg-2 text-md-center text-center">
                                             <button type="button" class="btn btn-primary">Find a desk</button>
                                         </div>
+                                    </form>
                                 </div>
-                                </form>
+
                             </div>
                         </div>
-
                     </div>
-                    <!-- <div class="row mt-5 mb-5">
-                        
-                    </div> -->
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+
+
 
 
 
@@ -197,15 +197,18 @@
             </div>
             <div class="col-12 col-sm-6 col-md-4">
                 <p class="text-secondary">Coworking is not only about the physical place, but about establishing the
-                    coworking community first. Its benefits can already be experienced outside of its places, and its
+                    coworking community first. Its benefits can already be experienced outside of its places, and
+                    its
                     recommended</p>
                 <p class="mt-3 text-secondary">To start with building a coworking community first before considering
                     opening a Coworking place.</p>
             </div>
             <div class="col-12 col-sm-6 col-md-4">
-                <p class="text-secondary">However, some coworkng places don,t build a community: they just get a part of
+                <p class="text-secondary">However, some coworkng places don,t build a community: they just get a
+                    part of
                     an existing one by combining their opening With</p>
-                <p class="mt-3 text-secondary">An event which attracts their target group. Real-estate centric coworking
+                <p class="mt-3 text-secondary">An event which attracts their target group. Real-estate centric
+                    coworking
                     spaces are about selling desks first, with building community as a secondary goal.</p>
             </div>
         </div>
@@ -214,7 +217,7 @@
             <div class="col-12">
                 <div class="card h-100 rounded border  border-light shadow-lg">
                     <div class="card-body">
-                        <div class="d-block d-md-flex mt-3 mx-3 justify-content-between">
+                        <div class="d-block d-md-flex mt-3 ms-3 justify-content-between">
                             <div>
                                 <p class="text-secondary">Space occupancy level</p>
                             </div>
@@ -235,7 +238,8 @@
                                     information.</p>
                             </div>
                             <div>
-                                <button type="button" class="btn btn-primary align-self-center">schedule a tour</button>
+                                <button type="button" class="btn btn-primary align-self-center">schedule a
+                                    tour</button>
                             </div>
                         </div>
                     </div>
@@ -456,7 +460,8 @@
                     <img src="https://demo.themesberg.com/spaces/assets/img/private-office.jpg" class="card-img-top">
                     <div class="card-body">
                         <h5>Private Space</h5>
-                        <i class="fas fa-map-marker-alt"></i><span class="ms-2">Budapest, Ferencvaros, Hungary</span>
+                        <i class="fas fa-map-marker-alt"></i><span class="ms-2">Budapest, Ferencvaros,
+                            Hungary</span>
                         <div class="d-flex my-4">
                             <span class="star fas fa-star text-warning"></span>
                             <span class="star fas fa-star text-warning"></span>
@@ -565,7 +570,7 @@
                                 </div>
                             </div>
                             <div class="col mt-lg-6 mt-3 text-center mb-5"><a href="#" class="btn btn-primary"><i
-                                        class="fas fa-search-location mr-2"></i>Find a Location</a>
+                                        class="fas fa-search-location me-2"></i>Find a Location</a>
                             </div>
                         </div>
 
@@ -600,7 +605,8 @@
                             <p><i class="fas fa-check-circle"></i> <span class="ms-2">Unlimited photos</span></p>
                             <p><i class="fas fa-check-circle"></i> <span class="ms-2">Unlimited videos</span></p>
                             <p><i class="fas fa-check-circle"></i> <span class="ms-2">Receive messages</span></p>
-                            <p><i class="fas fa-check-circle"></i> <span class="ms-2">Display your contact info</span>
+                            <p><i class="fas fa-check-circle"></i> <span class="ms-2">Display your contact
+                                    info</span>
                             </p>
 
                             <button type="button" class="btn btn-outline-primary text-center w-100 mt-4">
@@ -626,16 +632,22 @@
                         <div class="card-body">
                             <p class="lead">Everything in the Free Plan:</p>
                             <p><i class="fas fa-check-circle"></i> <span class="ms-2">Rank booster</span></p>
-                            <p><i class="fas fa-check-circle"></i> <span class="ms-2">Lead capturing buttons</span></p>
-                            <p><i class="fas fa-check-circle"></i> <span class="ms-2">Connect your social media</span>
+                            <p><i class="fas fa-check-circle"></i> <span class="ms-2">Lead capturing buttons</span>
                             </p>
-                            <p><i class="fas fa-check-circle"></i> <span class="ms-2">Display your contact info</span>
+                            <p><i class="fas fa-check-circle"></i> <span class="ms-2">Connect your social
+                                    media</span>
                             </p>
-                            <p><i class="fas fa-check-circle"></i> <span class="ms-2">Link to your website</span></p>
-                            <p><i class="fas fa-check-circle"></i> <span class="ms-2"></span>Promote your best review
+                            <p><i class="fas fa-check-circle"></i> <span class="ms-2">Display your contact
+                                    info</span>
+                            </p>
+                            <p><i class="fas fa-check-circle"></i> <span class="ms-2">Link to your website</span>
+                            </p>
+                            <p><i class="fas fa-check-circle"></i> <span class="ms-2"></span>Promote your best
+                                review
                             </p>
                             <p><i class="fas fa-check-circle"></i> <span class="ms-2"></span>Booking & Lead logs</p>
-                            <p><i class="fas fa-check-circle"></i> <span class="ms-2"></span>Priority customer support
+                            <p><i class="fas fa-check-circle"></i> <span class="ms-2"></span>Priority customer
+                                support
                             </p>
 
                             <button type="button" class="btn btn-outline-primary text-center w-100 mt-4">
@@ -830,8 +842,10 @@
                         </tr>
                         <tr>
                             <td></td>
-                            <td><button type="button" class="btn btn-primary">Buy Standard License- $49</button></td>
-                            <td><button type="button" class="btn btn-outline-dark">Buy Extended License- $79</button>
+                            <td><button type="button" class="btn btn-primary">Buy Standard License- $49</button>
+                            </td>
+                            <td><button type="button" class="btn btn-outline-dark">Buy Extended License-
+                                    $79</button>
                             </td>
                         </tr>
                     </tbody>
@@ -846,12 +860,13 @@
                 <div class="col-xl-3  mb-3 py-5">
                     <img src="https://seeklogo.com/images/B/bootstrap-logo-69A1CCC10B-seeklogo.com.png"
                         alt="Bootstrap log" height="30" width="150">
-                    <p class="my-4 text-secondary">For those seeking the finest in services and technology in a downtown
+                    <p class="my-4 text-secondary">For those seeking the finest in services and technology in a
+                        downtown
                         business center, without the high cost.</p>
-                    <i class="fab fa-twitter mx-2 text-white"></i>
-                    <i class="fab fa-facebook mx-2 text-white"></i>
-                    <i class="fab fa-github mx-2 text-white"></i>
-                    <i class="fab fa-google-plus-g mx-2 text-white"></i>
+                    <i class="fab fa-twitter ms-2 text-white"></i>
+                    <i class="fab fa-facebook ms-2 text-white"></i>
+                    <i class="fab fa-github ms-2 text-white"></i>
+                    <i class="fab fa-google-plus-g ms-2 text-white"></i>
                 </div>
                 <div class="col-6 col-xl-2 mb-3 py-5">
                     <ul class="list-group list-group-flush">
