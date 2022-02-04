@@ -10,37 +10,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <style>
-        html,
-        body {
-            overflow-x: hidden;
-        }
-
-        .header_image {
-            background-image: url("https://www.dropbox.com/s/9fvw247x7ml90mf/canadaN.jpg?dl=1");
-            background-size: cover;
-            height: 100vh;
-        }
-
-        @media screen and (min-width:320px) and (max-width:991px) and (orientation: landscape) {
-            .font-custom {
-                font-size: 95%;
-            }
-
-            .container-custom,
-            .header_image {
-                height: 200vh;
-            }
-        }
-
-        @media screen and (max-width:575px) {
-
-            .container-custom,
-            .header_image {
-                height: 220vh;
-            }
-        }
-    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        $(document).ready(function () {
+            $("#dropdown1").click(function () {
+                $("#dropdown_menu1").toggle(1000);
+            });
+            $("#dropdown2").click(function () {
+                $("#dropdown_menu2").toggle(1000);
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -58,25 +40,25 @@
                         <li class="nav-item ms-3">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
-                        <li class="nav-item dropdown ms-3">
-                            <a class="nav-link text-white" href="#" id="navbarDropdown" role="button"
+                        <li class="nav-item dropdown ms-3" id="dropdown1">
+                            <a class="nav-link text-white" href="#" id="navbarDropdown1" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Pages
                                 <i class='fas fa-angle-down' style='font: size 15px;'></i>
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <ul class="dropdown-menu" id="dropdown_menu1" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#">Page1</a></li>
                                 <li><a class="dropdown-item" href="#">page2</a></li>
                                 <li><a class="dropdown-item" href="#">page3</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item ms-3 dropdown">
+                        <li class="nav-item ms-3 dropdown" id="dropdown2">
                             <a class="nav-link text-white" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 Support
                                 <i class='fas fa-angle-down' style='font: size 15px;'></i>
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <ul class="dropdown-menu" id="dropdown_menu2" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#">Support1</a></li>
                                 <li><a class="dropdown-item" href="#">Support2</a></li>
                                 <li><a class="dropdown-item" href="#">Support3</a></li>
@@ -87,7 +69,8 @@
                         <li class="nav-item">
                             <button type="button" class="btn btn-primary ms-2">Login</button>
                             <button type="button" class="btn btn-light text-primary ms-2">Sign up</button>
-                            <button type="button" class="btn btn-outline-light text-secondary ms-2"><svg
+                            <button type="button"
+                                class="btn btn-outline-light text-secondary ms-2 mt-2 mt-sm-0 mt-md-0 mt-lg-0 mt-xl-0 mt-xxl-0"><svg
                                     xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                     class="bi bi-plus" viewBox="0 0 16 16">
                                     <path
@@ -107,12 +90,13 @@
                 <div class="d-flex align-items-center container">
                     <div class="row mt-5">
                         <div class=" col-sm-12 mt-5">
-                            <h1 class="font-custom dispaly-2 text-center">Find Your Perfect <b>coworking</b> space</h1>
-                            <h3 class="font-custom text-center text-secondary">12,000+ coworking space with desks,
+                            <h1 class="font-custom dispaly-2 text-white text-center">Find Your Perfect <b>coworking</b>
+                                space</h1>
+                            <h3 class="font-custom text-center text-white">12,000+ coworking space with desks,
                                 offices & meeting
                                 rooms in 165+
                                 countries.</h3>
-                            <h3 class="font-custom text-center text-secondary">Discover and reserve space today.</h3>
+                            <h3 class="font-custom text-center text-white">Discover and reserve space today.</h3>
                         </div>
                         <div class="col mt-5">
                             <div class="card card-custom p-md-2">
@@ -207,7 +191,7 @@
 
         <div class="row">
             <div class="col-12">
-                <div class="card h-100 rounded border  border-light shadow-lg">
+                <div class="card h-100 rounded border  border-light shadow">
                     <div class="card-body">
                         <div class="d-block d-md-flex mt-3 ms-3 justify-content-between">
                             <div>
@@ -226,7 +210,8 @@
                         <div class="d-block d-md-flex mt-5 justify-content-between align-items-center">
                             <div>
                                 <h3>Book Your tour experience today!</h3>
-                                <p>Schedule a tour, make an appointment to rent space at Themesberg, or ask for more
+                                <p class="text-secondary">Schedule a tour, make an appointment to rent space at
+                                    Themesberg, or ask for more
                                     information.</p>
                             </div>
                             <div>
@@ -241,34 +226,52 @@
 
         <div class="row mt-5">
             <div class="col-12">
-                <h3 class="mb-5">Top Cities</h3>
+                <h3 class="mb-5 text-secondary">Top Cities</h3>
             </div>
             <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
-                <div class="card">
+                <div class="card image_card1">
                     <img src="https://demo.themesberg.com/spaces/assets/img/newyork.jpg" alt="Newyork"
-                        class="card-img-top">
-                    <p class="carousel-caption text-center top-50 h3">New york</p>
+                        class="card-img-top overlay_image">
+                    <div class="middle">
+                        <div class="text">
+                            New York
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
-                <div class="card">
-                    <img src="https://demo.themesberg.com/spaces/assets/img/paris.jpg" alt="Paris" class="card-img-top">
-                    <p class="carousel-caption text-center top-50 h3">Paris</p>
+                <div class="card image_card1">
+                    <img src="https://demo.themesberg.com/spaces/assets/img/paris.jpg" alt="Paris"
+                        class="card-img-top overlay_image">
+                    <div class="middle">
+                        <div class="text">
+                            Paris
+                        </div>
+                    </div>
                 </div>
 
             </div>
             <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
-                <div class="card">
+                <div class="card image_card1">
                     <img src="https://demo.themesberg.com/spaces/assets/img/london.jpg" alt="London"
-                        class="card-img-top">
-                    <p class="carousel-caption text-center top-50 h3">London</p>
+                        class="card-img-top overlay_image">
+                    <div class="middle">
+                        <div class="text">
+                            London
+                        </div>
+                    </div>
                 </div>
 
             </div>
             <div class="col-12 col-sm-6 col-lg-3 mb-4 mb-lg-0">
-                <div class="card">
-                    <img src="https://demo.themesberg.com/spaces/assets/img/tokyo.jpg" alt="Tokyo" class="card-img-top">
-                    <p class="carousel-caption text-center top-50 h3">Tokyo</p>
+                <div class="card image_card1">
+                    <img src="https://demo.themesberg.com/spaces/assets/img/tokyo.jpg" alt="Tokyo"
+                        class="card-img-top overlay_image">
+                    <div class="middle">
+                        <div class="text">
+                            Tokyo
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -276,16 +279,20 @@
 
         <div class="row g-4 mt-5">
             <div class="col-12">
-                <h3 class="mb-5">Trending Spaces</h3>
+                <h3 class="mb-5 text-secondary">Trending Spaces</h3>
             </div>
 
             <div class="col-12 col-sm-6 col-md-6 col-lg-4">
 
-                <div class="card h-100 shadow-lg">
+                <div class="card h-100 shadow">
                     <img src="https://demo.themesberg.com/spaces/assets/img/image-office.jpg" class="card-img-top">
+                    <!-- <div class="card-img-overlay d-flex flex-column justify-content-center align-items-end">
+                        <span class="badge bg-primary mb-5 mb-sm-3 mb-md-3 mb-lg-3 mb-xl-3 mb-xxl-3">Office Space</span>
+                    </div> -->
                     <div class="card-body">
                         <h5>Collabrative Workspace</h5>
-                        <i class="fas fa-map-marker-alt"></i><span class="ms-2">New York, Manhattan, USA</span>
+                        <i class="fas fa-map-marker-alt text-secondary"></i><span class="ms-2 text-secondary">New York,
+                            Manhattan, USA</span>
 
                         <div class="d-flex my-4">
                             <span class="star fas fa-star text-warning"></span>
@@ -315,11 +322,16 @@
             </div>
 
             <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-lg">
+                <div class="card h-100 shadow">
                     <img src="https://demo.themesberg.com/spaces/assets/img/cowork-office.jpg" class="card-img-top">
+                    <!-- <div class="card-img-overlay d-flex flex-column justify-content-center align-items-end">
+                        <span class="badge bg-success mb-5 mb-sm-3 mb-md-3 mb-lg-3 mb-xl-3 mb-xxl-3">Coworking
+                            Space</span>
+                    </div> -->
                     <div class="card-body">
                         <h5>Coworking Workspace</h5>
-                        <i class="fas fa-map-marker-alt"></i><span class="ms-2">Bucharest, Sector 2, Romania</span>
+                        <i class="fas fa-map-marker-alt text-secondary"></i><span class="ms-2 text-secondary">Bucharest,
+                            Sector 2, Romania</span>
 
                         <div class="d-flex my-4">
                             <span class="star fas fa-star text-warning"></span>
@@ -349,11 +361,16 @@
             </div>
 
             <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-lg">
+                <div class="card h-100 shadow">
                     <img src="https://demo.themesberg.com/spaces/assets/img/meeting-office.jpg" class="card-img-top">
+                    <!-- <div class="card-img-overlay d-flex flex-column justify-content-center align-items-end">
+                        <span class="badge bg-warning mb-5 mb-sm-3 mb-md-3 mb-lg-3 mb-xl-3 mb-xxl-3">Meeting
+                            Space</span>
+                    </div> -->
                     <div class="card-body">
                         <h5>Meeting Office Space</h5>
-                        <i class="fas fa-map-marker-alt"></i><span class="ms-2">London, Canary Wharf, UK</span>
+                        <i class="fas fa-map-marker-alt text-secondary"></i><span class="ms-2 text-secondary">London,
+                            Canary Wharf, UK</span>
 
                         <div class="d-flex my-4">
                             <span class="star fas fa-star text-warning"></span>
@@ -382,11 +399,16 @@
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-lg">
+                <div class="card h-100 shadow">
                     <img src="https://demo.themesberg.com/spaces/assets/img/conference-office.jpg" class="card-img-top">
+                    <!-- <div class="card-img-overlay d-flex flex-column justify-content-center align-items-end">
+                        <span class="badge bg-primary mb-5 mb-sm-3 mb-md-3 mb-lg-3 mb-xl-3 mb-xxl-3">Conference
+                            Room</span>
+                    </div> -->
                     <div class="card-body">
                         <h5>Conference Room</h5>
-                        <i class="fas fa-map-marker-alt"></i><span class="ms-2">Paris, La Defense, France</span>
+                        <i class="fas fa-map-marker-alt text-secondary"></i><span class="ms-2 text-secondary">Paris, La
+                            Defense, France</span>
 
                         <div class="d-flex my-4">
                             <span class="star fas fa-star text-warning"></span>
@@ -415,11 +437,16 @@
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-lg">
+                <div class="card h-100 shadow">
                     <img src="https://demo.themesberg.com/spaces/assets/img/lifestyle-office.jpg" class="card-img-top">
+                    <!-- <div class="card-img-overlay d-flex flex-column justify-content-center align-items-end">
+                        <span class="badge bg-success mb-5 mb-sm-3 mb-md-3 mb-lg-3 mb-xl-3 mb-xxl-3">Lifestyle
+                            Space</span>
+                    </div> -->
                     <div class="card-body">
                         <h5>Lifestyle Space</h5>
-                        <i class="fas fa-map-marker-alt"></i><span class="ms-2">Madrid, Hortaleza, Spain</span>
+                        <i class="fas fa-map-marker-alt text-secondary"></i><span class="ms-2 text-secondary">Madrid,
+                            Hortaleza, Spain</span>
 
                         <div class="d-flex my-4">
                             <span class="star fas fa-star text-warning"></span>
@@ -448,11 +475,16 @@
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-lg">
+                <div class="card h-100 shadow">
                     <img src="https://demo.themesberg.com/spaces/assets/img/private-office.jpg" class="card-img-top">
+                    <!-- <div class="card-img-overlay d-flex flex-column justify-content-center align-items-end">
+                        <span class="badge bg-warning mb-5 mb-sm-3 mb-md-3 mb-lg-3 mb-xl-3 mb-xxl-3">Private
+                            Space</span>
+                    </div> -->
                     <div class="card-body">
                         <h5>Private Space</h5>
-                        <i class="fas fa-map-marker-alt"></i><span class="ms-2">Budapest, Ferencvaros,
+                        <i class="fas fa-map-marker-alt text-secondary"></i><span class="ms-2 text-secondary">Budapest,
+                            Ferencvaros,
                             Hungary</span>
                         <div class="d-flex my-4">
                             <span class="star fas fa-star text-warning"></span>
@@ -483,7 +515,7 @@
 
             <div class="col mt-lg-6 mt-5 d-flex flex-column text-center">
                 <div><a href="#" class="btn btn-primary">Browse All</a></div>
-                <span class="mt-2">142 spaces in 6 countries</span>
+                <span class="mt-2 text-secondary">142 spaces in 6 countries</span>
             </div>
 
         </div>
@@ -496,72 +528,71 @@
             <div class="row justify-content-center mb-4 mb-lg-5">
                 <div class="col-12 col-md-8 text-center mt-5">
                     <h2 class="h1"><span class="font-weight-bold">How</span> it works?</h2>
-                    <p class="lead mt-3">All you’ll need are the details of the building and location, the types of
+                    <p class="lead mt-3 text-secondary">All you’ll need are the details of the building and location,
+                        the types of
                         space, pricing and some good quality photographs.</p>
-                    <button type="button" class="btn btn-outline-dark mt-2  text-primary ms-auto">
+                    <button type="button"
+                        class="btn btn-light shadow-sm mt-2 border border-2 border-light  text-primary ms-auto"
+                        style="background: white;">
                         <i class="fas fa-building"></i>
                         <span>Find Your Space</span>
                     </button>
-                    <button type="button" class="btn btn-outline-primary mt-2 ms-auto text-dark">
+                    <button type="button" class="btn btn-light mt-2 ms-auto text-secondary">
                         <i class="far fa-money-bill-alt"></i>
                         <span>Submit Your Space</span>
                     </button>
                 </div>
             </div>
-            <!-- <div class="row">
-                <div class="col-12 col-lg-6 d-flex justify-content-center">
-                   
-                </div>
-                <div class="col-12 col-lg-6">
 
-                </div>
-            </div> -->
             <div class="row g-2">
                 <div class="col-12">
                     <div>
                         <div>
-                            <div class="row g-3">
+                            <div class="row g-3 mb-5">
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="card h-100 border-light mb-4 mb-lg-0 text-center">
-                                        <div class="card-body p-4 px-xl-4 py-xl-6">
-                                            <div>
+                                        <div class="card-body p-4 px-xl-4 my-5 py-xl-6">
+                                            <div class="mb-5">
                                                 <span class="fas fa-search"
                                                     style="font-size: 2.0em;width:2.0em;text-align: center;line-height: 2.0em;background: #D0DFF7;color: #355BD4;border-radius: 1em;"></span>
                                             </div>
                                             <h3 class="h5 my-3">1. Choose a workspace</h3>
-                                            <p>It takes no longer than 15 minutes to list your space on themesberg.
+                                            <p class="text-secondary">It takes no longer than 15 minutes to list your
+                                                space on themesberg.
                                                 Our user friendly process.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="card h-100 border-light mb-4 mb-lg-0 text-center">
-                                        <div class="card-body p-4 px-xl-4 py-xl-6">
-                                            <div>
+                                        <div class="card-body my-5 p-4 px-xl-4 py-xl-6">
+                                            <div class="mb-5">
                                                 <span class="far fa-calendar-check"
                                                     style="font-size: 2.0em;width:2.0em;text-align: center;line-height: 2.0em;background: #D0DFF7;color: #355BD4;border-radius: 1em;"></span>
                                             </div>
                                             <h3 class="h5 my-3">2. Schedule a tour</h3>
-                                            <p>After you have uploaded your space - our website makes it easy for
+                                            <p class="text-secondary">After you have uploaded your space - our website
+                                                makes it easy for
                                                 you to keep the details up to date.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6 col-lg-4">
                                     <div class="card h-100 border-light mb-4 mb-lg-0 text-center">
-                                        <div class="card-body p-4 px-xl-4 py-xl-6">
-                                            <div>
+                                        <div class="card-body my-5 p-4 px-xl-4 py-xl-6">
+                                            <div class="mb-5">
                                                 <span class="fas fa-mouse-pointer"
                                                     style="font-size: 2.0em;width:2.0em;text-align: center;line-height: 2.0em;background: #D0DFF7;color: #355BD4;border-radius: 1em;"></span>
                                             </div>
                                             <h3 class="h5 my-3">3. Book your workspace</h3>
-                                            <p>Orders coming from themesberg are 100% prepaid. We will bring you not
+                                            <p class="text-secondary">Orders coming from themesberg are 100% prepaid. We
+                                                will bring you not
                                                 just leads but new clients.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col mt-lg-6 mt-3 text-center mb-5"><a href="#" class="btn btn-primary"><i
+                            <div class="col mt-lg-6 mt-5 text-center mb-5"><a href="#" class="btn btn-primary"><i
                                         class="fas fa-search-location me-2"></i>Find a Location</a>
                             </div>
                         </div>
@@ -576,30 +607,34 @@
         <div class="row mt-5">
             <div class="col-12 mt-5">
                 <p class="lead display-6 text-center">Choose a <b>plan</b> for your space</p>
-                <p class="lead text-center">Upgrade your space for higher rankings, powerful features & more ways to
+                <p class="lead text-center text-secondary">Upgrade your space for higher rankings, powerful features &
+                    more ways to
                     connect with potential customers.</p>
             </div>
         </div>
         <div class="row g-3 mt-5">
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card shadow-lg border-light">
+                <div class="card shadow border-light">
                     <div class="card-body">
-                        <p class="lead display-6 text-center">Free</p>
+                        <p class="lead display-6 text-center text-secondary">Free</p>
                         <div class="card-text">
                             <div class="text-center">
                                 <p class="text-primary"><sup style="vertical-align: text-top;">$</sup><span
-                                        class="display-2">0</span><sub class="text-secondary">/month</sub></p>
+                                        class="display-2">0</span><sub class="text-secondary opacity-25">/ month</sub>
+                                </p>
                             </div>
                         </div>
                         <hr class="card-divider">
                         <div class="card-body">
-                            <p class="lead">Get Listed in Directory:</p>
-                            <p><i class="fas fa-check-circle"></i> <span class="ms-2">Unlimited photos</span></p>
-                            <p><i class="fas fa-check-circle"></i> <span class="ms-2">Unlimited videos</span></p>
-                            <p><i class="fas fa-check-circle"></i> <span class="ms-2">Receive messages</span></p>
-                            <p><i class="fas fa-check-circle"></i> <span class="ms-2">Display your contact
-                                    info</span>
-                            </p>
+                            <p class="lead text-secondary">Get Listed in Directory:</p>
+                            <p><i class="fas fa-check-circle text-secondary"></i> <span
+                                    class="ms-2 text-secondary">Unlimited photos</span></p>
+                            <p><i class="fas fa-check-circle text-secondary"></i> <span
+                                    class="ms-2 text-secondary">Unlimited videos</span></p>
+                            <p><i class="fas fa-check-circle text-secondary"></i> <span
+                                    class="ms-2 text-secondary">Receive messages</span></p>
+                            <p><i class="fas fa-check-circle text-secondary"></i> <span
+                                    class="ms-2 text-secondary">Display your contact info</span></p>
 
                             <button type="button" class="btn btn-outline-primary text-center w-100 mt-4">
                                 <i class="fas fa-cart-plus"></i>
@@ -611,35 +646,43 @@
             </div>
 
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card shadow-lg border-light">
+                <div class="card shadow border-light">
                     <div class="card-body">
-                        <p class="lead display-6 text-center">Silver</p>
+                        <p class="lead display-6 text-center text-secondary">Silver</p>
                         <div class="card-text">
                             <div class="text-center">
                                 <p class="text-primary"><sup style="vertical-align: text-top;">$</sup><span
-                                        class="display-2">19</span><sub class="text-secondary">/month</sub></p>
+                                        class="display-2">19</span><sub class="text-secondary opacity-25">/month</sub>
+                                </p>
                             </div>
                         </div>
                         <hr class="card-divider">
                         <div class="card-body">
-                            <p class="lead">Everything in the Free Plan:</p>
-                            <p><i class="fas fa-check-circle"></i> <span class="ms-2">Rank booster</span></p>
-                            <p><i class="fas fa-check-circle"></i> <span class="ms-2">Lead capturing buttons</span>
+                            <p class="lead text-secondary">Everything in the Free Plan:</p>
+                            <p><i class="fas fa-check-circle text-secondary"></i> <span class="ms-2 text-secondary">Rank
+                                    booster</span></p>
+                            <p><i class="fas fa-check-circle text-secondary"></i> <span class="ms-2 text-secondary">Lead
+                                    capturing buttons</span>
                             </p>
-                            <p><i class="fas fa-check-circle"></i> <span class="ms-2">Connect your social
+                            <p><i class="fas fa-check-circle text-secondary"></i> <span
+                                    class="ms-2 text-secondary">Connect your social
                                     media</span>
                             </p>
-                            <p><i class="fas fa-check-circle"></i> <span class="ms-2">Display your contact
-                                    info</span>
+                            <p><i class="fas fa-check-circle text-secondary"></i> <span
+                                    class="ms-2 text-secondary">Display your contact info</span>
                             </p>
-                            <p><i class="fas fa-check-circle"></i> <span class="ms-2">Link to your website</span>
+                            <p><i class="fas fa-check-circle text-secondary"></i> <span class="ms-2 text-secondary">Link
+                                    to your website</span>
                             </p>
-                            <p><i class="fas fa-check-circle"></i> <span class="ms-2"></span>Promote your best
-                                review
+                            <p><i class="fas fa-check-circle text-secondary"></i> <span
+                                    class="ms-2 text-secondary">Promote your best
+                                    review</span>
                             </p>
-                            <p><i class="fas fa-check-circle"></i> <span class="ms-2"></span>Booking & Lead logs</p>
-                            <p><i class="fas fa-check-circle"></i> <span class="ms-2"></span>Priority customer
-                                support
+                            <p><i class="fas fa-check-circle text-secondary"></i> <span
+                                    class="ms-2 text-secondary">Booking & Lead logs </span></p>
+                            <p><i class="fas fa-check-circle text-secondary"></i> <span
+                                    class="ms-2 text-secondary">Priority customer
+                                    support</span>
                             </p>
 
                             <button type="button" class="btn btn-outline-primary text-center w-100 mt-4">
@@ -653,46 +696,49 @@
 
 
             <div class="col-12 col-md-6 col-lg-4">
-                <div class="card shadow-lg border-light">
+                <div class="card shadow border-light">
                     <div class="card-body">
-                        <p class="lead display-6 text-center">Gold</p>
+                        <p class="lead display-6 text-center text-secondary">Gold</p>
                         <div class="card-text">
                             <div class="text-center">
                                 <p class="text-primary"><sup style="vertical-align: text-top;">$</sup><span
-                                        class="display-2">49</span><sub class="text-secondary">/month</sub></p>
+                                        class="display-2">49</span><sub class="text-secondary opacity-25">/month</sub>
+                                </p>
                             </div>
                         </div>
                         <hr class="card-divider">
                         <div class="card-body">
-                            <p class="lead">Everything in the other Plan:</p>
+                            <p class="lead text-secondary">Everything in the other Plan:</p>
                             <ul class="list-group list-group-flush border-light">
                                 <li class="list-group-item border-0" style='text-indent:-0.81em;'>
-                                    <i class="fas fa-check-circle"></i>
-                                    <span class="ms-2">Appear at the top of your city's search page</span>
+                                    <i class="fas fa-check-circle text-secondary"></i>
+                                    <span class="ms-2 text-secondary">Appear at the top of your city's search
+                                        page</span>
                                 </li>
                                 <li class="list-group-item border-0" style='text-indent:-0.81em;'>
-                                    <i class="fas fa-check-circle"></i>
-                                    <span class="ms-2">Appear at the top of popular spaces page</span>
+                                    <i class="fas fa-check-circle text-secondary"></i>
+                                    <span class="ms-2 text-secondary">Appear at the top of popular spaces page</span>
                                 </li>
                                 <li class="list-group-item border-0" style='text-indent:-0.81em;'>
-                                    <i class="fas fa-check-circle"></i>
-                                    <span class="ms-2"></span>Receive a special "Popular Now" banner
+                                    <i class="fas fa-check-circle text-secondary"></i>
+                                    <span class="ms-2 text-secondary">Receive a special "Popular Now" banner</span>
                                 </li>
                                 <li class="list-group-item border-0" style='text-indent:-0.81em;'>
-                                    <i class="fas fa-check-circle"></i>
-                                    <span class="ms-2"></span>A custom pin drop on the map
+                                    <i class="fas fa-check-circle text-secondary"></i>
+                                    <span class="ms-2 text-secondary">A custom pin drop on the map</span>
                                 </li>
                                 <li class="list-group-item border-0" style='text-indent:-0.81em;'>
-                                    <i class="fas fa-check-circle"></i>
-                                    <span class="ms-2"></span>Spaces Instagram takeover(*annual subscriber)
+                                    <i class="fas fa-check-circle text-secondary"></i>
+                                    <span class="ms-2 text-secondary">Spaces Instagram takeover(*annual
+                                        subscriber)</span>
                                 </li>
                                 <li class="list-group-item border-0" style='text-indent:-0.81em;'>
-                                    <i class="fas fa-check-circle"></i>
-                                    <span class="ms-2"></span>Priority customer support and on boarding
+                                    <i class="fas fa-check-circle text-secondary"></i>
+                                    <span class="ms-2 text-secondary">Priority customer support and on boarding</span>
                                 </li>
                                 <li class="list-group-item border-0" style='text-indent:-0.81em;'>
-                                    <i class="fas fa-check-circle"></i>
-                                    <span class="ms-2"></span>Advertising campaign
+                                    <i class="fas fa-check-circle text-secondary"></i>
+                                    <span class="ms-2 text-secondary">Advertising campaign</span>
                                 </li>
                             </ul>
 
@@ -714,21 +760,23 @@
                     <ul class="nav nav-pills mt-5 flex-sm-row justify-content-center" id="tab1">
                         <li class="nav-item m-4">
                             <a href="#review1" data-bs-toggle="tab" role="tab"
-                                class="nav-link active text-sm-center bg-light">
+                                class="nav-link active text-sm-center bg-light link-custom">
                                 <img src="https://demo.themesberg.com/spaces/assets/img/team/profile-picture-1.jpg"
-                                    width="80" height="80" class="rounded-circle" alt="Profile picture-1">
+                                    width="80" height="80" class="rounded-circle link-img" alt="Profile picture-1">
                             </a>
                         </li>
                         <li class="nav-item m-4">
-                            <a href="#review2" data-bs-toggle="tab" role="tab" class="nav-link text-sm-center bg-light">
+                            <a href="#review2" data-bs-toggle="tab" role="tab"
+                                class="nav-link text-sm-center bg-light link-custom">
                                 <img src="https://demo.themesberg.com/spaces/assets/img/team/profile-picture-3.jpg"
-                                    width="80" height="80" class="rounded-circle" alt="Profile picture-2">
+                                    width="80" height="80" class="rounded-circle link-img" alt="Profile picture-2">
                             </a>
                         </li>
                         <li class="nav-item m-4">
-                            <a href="#review3" data-bs-toggle="tab" role="tab" class="nav-link text-sm-center bg-light">
+                            <a href="#review3" data-bs-toggle="tab" role="tab"
+                                class="nav-link text-sm-center bg-light link-custom">
                                 <img src="https://demo.themesberg.com/spaces/assets/img/team/profile-picture-4.jpg"
-                                    width="80" height="80" class="rounded-circle" alt="Profile picture-3">
+                                    width="80" height="80" class="rounded-circle link-img" alt="Profile picture-3">
                             </a>
                         </li>
                     </ul>
@@ -745,7 +793,8 @@
                                 <span class="star fas fa-star text-warning"></span>
                                 <span class="star fas fa-star text-warning"></span>
                             </span>
-                            <blockquote class="blockquote bg-light p-0 p-md-4">I used Themesberg's logo creation
+                            <blockquote class="blockquote bg-light p-0 p-md-4 text-center text-secondary">I used
+                                Themesberg's logo creation
                                 services along with their website development services. They have been a
                                 pleasure to work with and have been responsive to all questions asked.
                                 <footer class="blockquote-footer mt-3 text-primary">Bonnie Green</footer>
@@ -759,7 +808,8 @@
                                 <span class="star fas fa-star text-warning"></span>
                                 <span class="star fas fa-star text-warning"></span>
                             </span>
-                            <blockquote class="blockquote bg-light p-0 p-md-4">I have worked with Themesberg
+                            <blockquote class="blockquote bg-light p-0 p-md-4 text-secondary text-center">I have worked
+                                with Themesberg
                                 over the years on a number of projects. I've always found them to be responsive,
                                 friendly and up-to-date with all the technology - which everyone knows is
                                 constantly changing.
@@ -774,7 +824,8 @@
                                 <span class="star fas fa-star text-warning"></span>
                                 <span class="star fas fa-star text-warning"></span>
                             </span>
-                            <blockquote class="blockquote bg-white p-0 p-md-4">Themesberg are the best in the
+                            <blockquote class="blockquote bg-white p-0 p-md-4 text-secondary text-center">Themesberg are
+                                the best in the
                                 business for website design and building. They worked hard to give us exactly
                                 what we wanted and more for our website and delivered on time. We would
                                 definitely use them again.
@@ -799,7 +850,7 @@
         <div class="row mt-5">
             <div class="col">
                 <table class="table table-borderless table-striped">
-                    <thead>
+                    <thead class="text-secondary">
                         <tr>
                             <th scope="col">Features</th>
                             <th scope="col">Standard License</th>
@@ -808,27 +859,27 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>Create single websites for client</td>
+                            <td class="text-secondary">Create single websites for client</td>
                             <td><i class="fas fa-check text-success"></i></td>
                             <td><i class="fas fa-check text-success"></i></td>
                         </tr>
                         <tr>
-                            <td>Create single personal website</td>
+                            <td class="text-secondary">Create single personal website</td>
                             <td><i class="fas fa-check text-success"></i></td>
                             <td><i class="fas fa-check text-success"></i></td>
                         </tr>
                         <tr>
-                            <td>6 months support included</td>
+                            <td class="text-secondary">6 months support included</td>
                             <td><i class="fas fa-check text-success"></i></td>
                             <td><i class="fas fa-check text-success"></i></td>
                         </tr>
                         <tr>
-                            <td>Create multiple personal websites</td>
+                            <td class="text-secondary">Create multiple personal websites</td>
                             <td><i class="fas fa-times text-danger"></i></i></td>
                             <td><i class="fas fa-check text-success"></i></td>
                         </tr>
                         <tr>
-                            <td>Create multiple websites for clients</td>
+                            <td class="text-secondary">Create multiple websites for clients</td>
                             <td><i class="fas fa-times text-danger"></i></i></td>
                             <td><i class="fas fa-check text-success"></i></td>
                         </tr>

@@ -1,0 +1,85 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
+.header_image {
+    background-image: url("https://www.dropbox.com/s/9fvw247x7ml90mf/canadaN.jpg?dl=1");
+    background-size: cover;
+    height: 100vh;
+}
+
+
+/* Starting of Image Overlay */
+.image_card1 {
+    position: relative;
+    background: black;
+    border: 0;
+}
+.overlay_image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.image_card1:hover .overlay_image {
+    opacity: 0.5;
+}
+
+.image_card1:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: x-large;
+}
+/* ending of image overlay */
+
+
+/*styling image Links in tabs */
+.link-custom.active{
+    opacity: 1;
+}
+.link-custom{
+    opacity: 0.2;
+}
+
+@media screen and (min-width:320px) and (max-width:991px) and (orientation: landscape) {
+    .font-custom {
+        font-size: 95%;
+    }
+
+    .container-custom,
+    .header_image {
+        height: 200vh;
+    }
+}
+
+@media screen and (max-width:375px) {
+
+    .container-custom,
+    .header_image {
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width:320px) {
+
+    .container-custom,
+    .header_image {
+        height: 200vh;
+    }
+}
