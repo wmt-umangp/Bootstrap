@@ -1,0 +1,94 @@
+html,
+body {
+    overflow-x: hidden;
+}
+
+.header_image {
+    background-image: url("https://htmlstream.com/front/assets/img/750x750/img2.jpg");
+    background-size: cover;
+    height: 70vh;
+}
+
+.custom-indicator {
+    opacity: 0.2;
+}
+
+.custom-indicator.active {
+    opacity: 0.8;
+}
+
+.col-md-4>div {
+    padding: 10px;
+    border: 0;
+    border-radius: 2px;
+}
+
+.image_card1 {
+    position: relative;
+    border: 0;
+}
+
+.overlay_image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    text-align: center;
+}
+
+.image_card1:hover .overlay_image {
+    opacity: 0.5;
+}
+
+.image_card1:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: large;
+}
+
+.image_card2 {
+    position: relative;
+    border: 0;
+}
+
+.overlay_image2 {
+    opacity: 1;
+    display: block;
+    height: auto;
+    width: 100%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.middle2 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+}
+
+.image_card2:hover .overlay_image2 {
+    opacity: 0;
+}
+
+.image_card2:hover .middle2 {
+    opacity: 1;
+}
+
+.text2 {
+    color: white;
+}
+
+.text2>p {
+    font-size: smaller;
+}
