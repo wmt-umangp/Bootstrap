@@ -9,8 +9,44 @@ body {
     height: 70vh;
 }
 
+.custom-select {
+    width: 165px;
+}
+
+.get_started_button {
+    background-color: #E8F2FF;
+}
+
+.video_button {
+    font-size: 1.3em;
+    width: 2.0em;
+    text-align: center;
+    line-height: 2.0em;
+    background: #E8FAF6;
+    border-radius: 1em;
+}
+
+.what_button {
+    background-color: #E8FAF6;
+}
+
+.card_icon {
+    font-size: 0.8em;
+    width: 2em;
+    text-align: center;
+    line-height: 2em;
+    background: #D0DFF7;
+    color: #355BD4;
+    border-radius: 1em;
+}
+
+.carousel_controls {
+    font-size: 20px;
+    background-color: #E1EEFF;
+}
+
 .carousel-indicators {
-    bottom: -8%;
+    bottom: -50px;
 }
 
 .carousel-indicators-round.active {
@@ -19,6 +55,12 @@ body {
 
 .carousel-indicators-round {
     opacity: 0.2 !important;
+    width: 5px !important;
+    height: 5px !important;
+}
+
+.card_position {
+    float: left;
 }
 
 .col-md-4>div {

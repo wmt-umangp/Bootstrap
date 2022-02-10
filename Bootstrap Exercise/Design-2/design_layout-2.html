@@ -14,23 +14,23 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style-1.css">
     <script>
-        $(document).ready(function(){
-            $(".animated_dd1").click(function(){
+        $(document).ready(function () {
+            $(".animated_dd1").click(function () {
                 $(".animated_dd_menu1").toggle("200");
             });
-            $(".animated_dd2").click(function(){
+            $(".animated_dd2").click(function () {
                 $(".animated_dd_menu2").toggle("200");
             });
-            $(".animated_dd3").click(function(){
+            $(".animated_dd3").click(function () {
                 $(".animated_dd_menu3").toggle("200");
             });
-            $(".animated_dd4").click(function(){
+            $(".animated_dd4").click(function () {
                 $(".animated_dd_menu4").toggle("200");
             });
-            $(".animated_dd5").click(function(){
+            $(".animated_dd5").click(function () {
                 $(".animated_dd_menu5").toggle("200");
             });
-            $(".animated_dd6").click(function(){
+            $(".animated_dd6").click(function () {
                 $(".animated_dd_menu6").toggle("200");
             });
         });
@@ -42,7 +42,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-4 col-sm-4 col-md-2 mt-2">
-                    <select class="form-select border-0 mb-1 form-select-sm" style="width: 75%;">
+                    <select class="form-select border-0 mb-1 form-select-sm custom-select">
                         <option value="IN">🇮🇳&emsp;India</option>
                         <option value="US">🇺🇸&emsp;United States</option>
                         <option value="NL">🇳🇱&emsp;Netherlands</option>
@@ -57,8 +57,7 @@
                             data-bs-toggle="dropdown">
                             <i class="fa fa-cog"></i> Support
                         </button>
-                        <div class="dropdown-menu" aria-labelledby="5b4f95e9a64b5" x-placement="bottom-start"
-                            style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(63px, 31px, 0px);">
+                        <div class="dropdown-menu">
                             <a href='#' class="dropdown-item text-secondary">Help</a>
                             <a href='#' class="dropdown-item text-secondary">Contacts</a>
                             <a href="#" class="dropdown-item ms-2"><i class="fas fa-search text-secondary"></i></a>
@@ -78,7 +77,7 @@
                 </div>
             </div>
 
-            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
+            <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"><img src="../Design-2/images/front-logo.png" alt="front-logo"
                             class="img-fluid"></a>
@@ -93,7 +92,7 @@
                                 <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     Home
-                                    <i class='fas fa-angle-down' style='font: size 15px;'></i>
+                                    <i class='fas fa-angle-down'></i>
                                 </a>
                                 <ul class="dropdown-menu animated_dd_menu1" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="#">Home1</a></li>
@@ -105,7 +104,7 @@
                                 <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     Pages
-                                    <i class='fas fa-angle-down' style='font: size 15px;'></i>
+                                    <i class='fas fa-angle-down'></i>
                                 </a>
                                 <ul class="dropdown-menu animated_dd_menu2" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="#">Pages1</a></li>
@@ -117,7 +116,7 @@
                                 <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     Blog
-                                    <i class='fas fa-angle-down' style='font: size 15px;'></i>
+                                    <i class='fas fa-angle-down'></i>
                                 </a>
                                 <ul class="dropdown-menu animated_dd_menu3" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="#">Blog1</a></li>
@@ -129,7 +128,7 @@
                                 <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     Shop
-                                    <i class='fas fa-angle-down' style='font: size 15px;'></i>
+                                    <i class='fas fa-angle-down'></i>
                                 </a>
                                 <ul class="dropdown-menu animated_dd_menu4" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="#">Shop1</a></li>
@@ -141,7 +140,7 @@
                                 <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     Demos
-                                    <i class='fas fa-angle-down' style='font: size 15px;'></i>
+                                    <i class='fas fa-angle-down'></i>
                                 </a>
                                 <ul class="dropdown-menu animated_dd_menu5" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="#">Demos1</a></li>
@@ -153,7 +152,7 @@
                                 <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     Docs
-                                    <i class='fas fa-angle-down' style='font: size 15px;'></i>
+                                    <i class='fas fa-angle-down'></i>
                                 </a>
                                 <ul class="dropdown-menu animated_dd_menu6" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="#">Docs1</a></li>
@@ -172,19 +171,19 @@
     </header>
 
     <div class="container">
-        <div class="row g-5 mt-3">
+        <div class="row g-5 mt-1 mt-sm-2">
             <div class="col-12 col-sm-12 col-md-6">
                 <p class="display-1 lead">Introducing Front</p>
                 <p class="text-secondary">Your company will look Attract more visitors, and win more visitors, and win
                     more business with Front template.</p>
                 <div class="row g-2">
-                    <div class="col-12 col-sm-4">
-                        <button type="button" class="btn text-primary btn-lg" style="background-color: #E8F2FF;">Get
+                    <div class="col-6 col-sm-4">
+                        <button type="button" class="btn text-primary btn-lg get_started_button">Get
                             Started</button>
                     </div>
-                    <div class="col-12 col-sm-8">
-                        <button type="button" class="btn text-primary"><i class="fas fa-caret-right text-success"
-                                style="font-size: 1.3em;width:2.0em;text-align: center;line-height: 2.0em;background: #E8FAF6;border-radius: 1em;"></i></button><span>Play
+                    <div class="col-6 col-sm-8">
+                        <button type="button" class="btn text-primary"><i
+                                class="fas fa-caret-right text-success video_button"></i></button><span>Play
                             video</span>
                     </div>
                 </div>
@@ -196,7 +195,7 @@
         <!-- logo images -->
         <div class="row">
             <div class="col mt-5 text-center">
-                <button type="button" class="btn text-success rounded-pill mb-3" style="background-color: #E8FAF6;">What
+                <button type="button" class="btn text-success rounded-pill mb-3 what_button">What
                     we do?</button>
                 <p class="lead display-6">Front makes designing easy and performance fast</p>
             </div>
@@ -247,7 +246,7 @@
 
         <div class="row mt-5">
             <div class="col-12 col-sm-12 col-md-12 col-xl-4 mt-5">
-                <button type="button" class="btn text-success rounded-pill" style="background-color: #E8FAF6;">Pricing
+                <button type="button" class="btn text-success rounded-pill what_button">Pricing
                     plans</button>
                 <p class="lead display-6 mt-3">No additional costs.</p>
                 <p class="lead display-6">Pay for what you use.</p>
@@ -282,20 +281,16 @@
                                     class="text-light">/month</sub>
                             </div>
                             <div class="card-body">
-                                <p><i class="fas fa-check text-primary"
-                                        style="font-size: 0.8em;width:2em;text-align: center;line-height: 2em;background: #D0DFF7;color: #355BD4;border-radius: 1em;"></i><small
-                                        class="ms-2">Community support</small></p>
-                                <p><i class="fas fa-check text-primary"
-                                        style="font-size: 0.8em;width:2em;text-align: center;line-height: 2em;background: #D0DFF7;color: #355BD4;border-radius: 1em;"></i><small
-                                        class="ms-2">400+ pages</small></p>
-                                <p><i class="fas fa-check text-primary"
-                                        style="font-size: 0.8em;width:2em;text-align: center;line-height: 2em;background: #D0DFF7;color: #355BD4;border-radius: 1em;"></i><small
-                                        class="ms-2">100+ header variations</small></p>
-                                <p><i class="fas fa-check text-primary"
-                                        style="font-size: 0.8em;width:2em;text-align: center;line-height: 2em;background: #D0DFF7;color: #355BD4;border-radius: 1em;"></i><small
-                                        class="ms-2 text-muted">20+ home page options</small></p>
-                                <button type="button" class="btn text-primary text-center w-100"
-                                    style="background-color: #E8F2FF;">Get Started</button>
+                                <p><i class="fas fa-check text-primary card_icon"></i><small class="ms-2">Community
+                                        support</small></p>
+                                <p><i class="fas fa-check text-primary card_icon"></i><small class="ms-2">400+
+                                        pages</small></p>
+                                <p><i class="fas fa-check text-primary card_icon"></i><small class="ms-2">100+ header
+                                        variations</small></p>
+                                <p><i class="fas fa-check text-primary card_icon"></i><small class="ms-2 text-muted">20+
+                                        home page options</small></p>
+                                <button type="button" class="btn text-primary text-center w-100 get_started_button">Get
+                                    Started</button>
                             </div>
                         </div>
                     </div>
@@ -311,29 +306,21 @@
                                     class="text-light">/month</sub>
                             </div>
                             <div class="card-body">
-                                <p><i class="fas fa-check text-primary"
-                                        style="font-size: 0.8em;width:2em;text-align: center;line-height: 2em;background: #D0DFF7;color: #355BD4;border-radius: 1em;"></i><small
-                                        class="ms-2">24/7 support</small></p>
-                                <p><i class="fas fa-check text-primary"
-                                        style="font-size: 0.8em;width:2em;text-align: center;line-height: 2em;background: #D0DFF7;color: #355BD4;border-radius: 1em;"></i><small
-                                        class="ms-2">400+ pages</small></p>
-                                <p><i class="fas fa-check text-primary"
-                                        style="font-size: 0.8em;width:2em;text-align: center;line-height: 2em;background: #D0DFF7;color: #355BD4;border-radius: 1em;"></i><small
-                                        class="ms-2">200+ header variations</small></p>
-                                <p><i class="fas fa-check text-primary"
-                                        style="font-size: 0.8em;width:2em;text-align: center;line-height: 2em;background: #D0DFF7;color: #355BD4;border-radius: 1em;"></i><small
-                                        class="ms-2">40+ home page options</small></p>
-                                <p><i class="fas fa-check text-primary"
-                                        style="font-size: 0.8em;width:2em;text-align: center;line-height: 2em;background: #D0DFF7;color: #355BD4;border-radius: 1em;"></i><small
-                                        class="ms-2">E-commerce</small></p>
+                                <p><i class="fas fa-check text-primary"></i><small class="ms-2">24/7 support</small></p>
+                                <p><i class="fas fa-check text-primary"></i><small class="ms-2">400+ pages</small></p>
+                                <p><i class="fas fa-check text-primary"></i><small class="ms-2">200+ header
+                                        variations</small></p>
+                                <p><i class="fas fa-check text-primary"></i><small class="ms-2">40+ home page
+                                        options</small></p>
+                                <p><i class="fas fa-check text-primary"></i><small class="ms-2">E-commerce</small></p>
 
-                                <button type="button" class="btn text-primary text-center w-100"
-                                    style="background-color: #E8F2FF;">Get Started</button>
+                                <button type="button" class="btn text-primary text-center w-100 get_started_button">Get
+                                    Started</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row text-center mt-2">
+                <div class="row text-center mt-4">
                     <div class="col-12">
                         <p class="text-secondary"><sup>* </sup><abbr title="attribute">Terms</abbr> are subject to
                             change</p>
@@ -345,8 +332,7 @@
         <!-- profile cards -->
         <div class="row g-5 text-center mt-5">
             <div class="col">
-                <button type="button" class="btn text-success rounded-pill text-center"
-                    style="background-color:#E7FAF6">News & Blog</button>
+                <button type="button" class="btn text-success rounded-pill text-center what_button">News & Blog</button>
                 <p class="lead display-6 mt-2">Read our latest news</p>
                 <p class="text-secondary lead">Our duty towards you is to share our experience we're reaching in our
                     work path with you.</p>
@@ -356,11 +342,10 @@
         <!-- card carousel -->
 
 
-        <div class="row">
+        <div class="row mt-5">
             <div
                 class="col-1 flex-row justify-content-center align-items-center d-none d-sm-none d-md-flex d-lg-flex d-xl-flex d-xxl-flex">
-                <button class="control-prev rounded-circle border-0 ms-4"
-                    style="font-size: 20px;background-color: #E1EEFF;" type="button"
+                <button class="control-prev rounded-circle border-0 ms-4 carousel_controls" type="button"
                     data-bs-target="#carouselExampleCaptions1" data-bs-slide="prev">
                     <span class="fas fa-arrow-left text-primary" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
@@ -374,17 +359,17 @@
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0"
                             class="active carousel-indicators-round rounded-circle p-1 m-2 bg-primary"
-                            style="width: 5px; height: 5px;" aria-current="true" aria-label="Slide 1"></button>
+                            aria-current="true" aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1"
                             class="carousel-indicators-round rounded-circle p-1 m-2 bg-primary"
-                            style="width: 5px; height: 5px;" aria-label="Slide 2"></button>
+                            aria-label="Slide 2"></button>
                         <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="2"
                             class="carousel-indicators-round rounded-circle p-1 m-2 bg-primary"
-                            style="width: 5px; height: 5px;" aria-label="Slide 3"></button>
+                            aria-label="Slide 3"></button>
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <div class="col-md-4" style="float:left">
+                            <div class="col-md-4 card_position">
                                 <div class="card image_card1 h-100 mb-3">
                                     <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                         class="card-img-top overlay_image shadow" alt="profile1">
@@ -402,7 +387,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-4" style="float:left">
+                            <div class="col-md-4 card_position">
                                 <div class="card image_card2 h-100 mb-3">
                                     <img src="https://images.pexels.com/photos/413959/pexels-photo-413959.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                         class="card-img-top overlay_image2 shadow" alt="profile3">
@@ -429,7 +414,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-4" style="float:left">
+                            <div class="col-md-4 card_position">
                                 <div class="card image_card1 h-100 mb-3">
                                     <img src="https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                         class="card-img-top overlay_image shadow" alt="profile2">
@@ -449,7 +434,7 @@
                         </div>
 
                         <div class="carousel-item">
-                            <div class="col-md-4" style="float:left">
+                            <div class="col-md-4 card_position">
                                 <div class="card image_card1 h-100 mb-3">
                                     <img src="https://images.pexels.com/photos/1559486/pexels-photo-1559486.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                         class="card-img-top overlay_image shadow" alt="profile4">
@@ -467,7 +452,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-4" style="float:left">
+                            <div class="col-md-4 card_position">
                                 <div class="card image_card1 h-100 mb-3 ">
                                     <img src="https://images.pexels.com/photos/1499327/pexels-photo-1499327.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                         class="card-img-top overlay_image shadow" alt="profile5">
@@ -485,7 +470,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-4" style="float:left">
+                            <div class="col-md-4 card_position">
                                 <div class="card image_card1 h-100 mb-3">
                                     <img src="https://images.pexels.com/photos/4065187/pexels-photo-4065187.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                         class="card-img-top overlay_image shadow" alt="profile6">
@@ -505,7 +490,7 @@
                         </div>
 
                         <div class="carousel-item">
-                            <div class="col-md-4" style="float:left">
+                            <div class="col-md-4 card_position">
                                 <div class="card image_card1 h-100 mb-3">
                                     <img src="https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                         class="card-img-top overlay_image shadow" alt="profile7">
@@ -522,7 +507,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4" style="float:left">
+                            <div class="col-md-4 card_position">
                                 <div class="card image_card1 h-100 mb-3">
                                     <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                         class="card-img-top overlay_image shadow" alt="profile8">
@@ -539,7 +524,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4" style="float:left">
+                            <div class="col-md-4 card_position">
                                 <div class="card image_card1 h-100 mb-3">
                                     <img src="https://images.pexels.com/photos/1987301/pexels-photo-1987301.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                         class="card-img-top overlay_image shadow" alt="profile9">
@@ -600,7 +585,7 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <div class="col-md-4" style="float:left">
+                            <div class="col-md-4">
                                 <div class="card image_card1 h-100 mb-3">
                                     <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                         class="card-img-top overlay_image shadow" alt="profile1">
@@ -620,7 +605,7 @@
                         </div>
 
                         <div class="carousel-item">
-                            <div class="col-md-4" style="float:left">
+                            <div class="col-md-4">
                                 <div class="card image_card2 h-100 mb-3">
                                     <img src="https://images.pexels.com/photos/413959/pexels-photo-413959.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                         class="card-img-top overlay_image2 shadow" alt="profile3">
@@ -650,7 +635,7 @@
                         </div>
 
                         <div class="carousel-item">
-                            <div class="col-md-4" style="float:left">
+                            <div class="col-md-4">
                                 <div class="card image_card1 h-100 mb-3">
                                     <img src="https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                         class="card-img-top overlay_image shadow" alt="profile2">
@@ -670,7 +655,7 @@
                         </div>
 
                         <div class="carousel-item">
-                            <div class="col-md-4" style="float:left">
+                            <div class="col-md-4">
                                 <div class="card image_card1 h-100 mb-3">
                                     <img src="https://images.pexels.com/photos/1559486/pexels-photo-1559486.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                         class="card-img-top overlay_image shadow" alt="profile4">
@@ -690,7 +675,7 @@
                         </div>
 
                         <div class="carousel-item">
-                            <div class="col-md-4" style="float:left">
+                            <div class="col-md-4">
                                 <div class="card image_card1 h-100 mb-3">
                                     <img src="https://images.pexels.com/photos/1499327/pexels-photo-1499327.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                         class="card-img-top overlay_image shadow" alt="profile5">
@@ -710,7 +695,7 @@
                         </div>
 
                         <div class="carousel-item">
-                            <div class="col-md-4" style="float:left">
+                            <div class="col-md-4">
                                 <div class="card image_card1 h-100 mb-3">
                                     <img src="https://images.pexels.com/photos/4065187/pexels-photo-4065187.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                         class="card-img-top overlay_image shadow" alt="profile6">
@@ -730,7 +715,7 @@
                         </div>
 
                         <div class="carousel-item">
-                            <div class="col-md-4" style="float:left">
+                            <div class="col-md-4">
                                 <div class="card image_card1 h-100 mb-3">
                                     <img src="https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                         class="card-img-top overlay_image shadow" alt="profile7">
@@ -750,7 +735,7 @@
                         </div>
 
                         <div class="carousel-item">
-                            <div class="col-md-4" style="float:left">
+                            <div class="col-md-4">
                                 <div class="card image_card1 h-100 mb-3">
                                     <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                         class="card-img-top overlay_image shadow" alt="profile8">
@@ -770,7 +755,7 @@
                         </div>
 
                         <div class="carousel-item">
-                            <div class="col-md-4" style="float:left">
+                            <div class="col-md-4">
                                 <div class="card image_card1 h-100 mb-3">
                                     <img src="https://images.pexels.com/photos/1987301/pexels-photo-1987301.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                         class="card-img-top overlay_image shadow" alt="profile9">
@@ -795,8 +780,7 @@
 
             <div
                 class="col-1 flex-row justify-content-center align-items-center d-none d-sm-none d-md-flex d-lg-flex d-xl-flex d-xxl-flex">
-                <button class="control-next rounded-circle border-0 me-4"
-                    style="font-size: 20px;background-color: #E1EEFF;" type="button"
+                <button class="control-next rounded-circle border-0 me-4 carousel_controls" type="button"
                     data-bs-target="#carouselExampleCaptions1" data-bs-slide="next">
                     <span class="fas fa-arrow-right text-primary" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
@@ -807,29 +791,29 @@
 
 
     <!-- footer -->
-    <footer class="mt-5" style="background-color: white;">
+    <footer class="mt-5">
         <div class="container mt-5">
-            <div class="row mt-5">
-                <div class="col-6 col-xl-2  mb-3 py-5">
+            <div class="row mt-5 mb-5 g-2">
+                <div class="col-6 col-xl-2 mt-4 mt-sm-2">
                     <p class="my-4"><b>About</b></p>
                     <p class="text-secondary">About</p>
                     <p class="text-secondary">Services</p>
                     <p class="text-secondary">Careers</p>
                 </div>
-                <div class="col-6 col-xl-2 mb-3 py-5">
+                <div class="col-6 col-xl-2 mt-4 mt-sm-2">
                     <p class="my-4"><b>Account</b></p>
                     <p class="text-secondary">Account</p>
                     <p class="text-secondary">My tasks</p>
                     <p class="text-secondary">Projects</p>
                 </div>
-                <div class="col-6 col-xl-2 mb-3 py-5">
+                <div class="col-6 col-xl-2 mt-4 mt-sm-2">
                     <p class="my-4"><b>Resources</b></p>
                     <p class="text-secondary">Help</p>
                     <p class="text-secondary">Terms</p>
                     <p class="text-secondary">Privacy</p>
                 </div>
 
-                <div class="col-6 col-xl-6 mb-3 py-5">
+                <div class="col-6 col-xl-6 mt-4 mt-sm-2">
                     <p class="my-4"><b>We are driven to deliver results for all your businesses.</b></p>
                     <div class="row">
                         <div class="col-12 col-sm-4 mt-2"><img
@@ -844,7 +828,7 @@
             <hr>
             <div class="row">
                 <div class="col text-secondary text-center">
-                    <p>&copy; Front 2019 Htmlstream. All rights reserved.</p>
+                    <p>&copy; Front 2022. Htmlstream. All rights reserved.</p>
                 </div>
             </div>
         </div>
