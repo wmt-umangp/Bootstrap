@@ -13,59 +13,75 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style-1.css">
+    <script>
+        $(document).ready(function(){
+            $(".animated_dd1").click(function(){
+                $(".animated_dd_menu1").toggle("200");
+            });
+            $(".animated_dd2").click(function(){
+                $(".animated_dd_menu2").toggle("200");
+            });
+            $(".animated_dd3").click(function(){
+                $(".animated_dd_menu3").toggle("200");
+            });
+            $(".animated_dd4").click(function(){
+                $(".animated_dd_menu4").toggle("200");
+            });
+            $(".animated_dd5").click(function(){
+                $(".animated_dd_menu5").toggle("200");
+            });
+            $(".animated_dd6").click(function(){
+                $(".animated_dd_menu6").toggle("200");
+            });
+        });
+    </script>
 </head>
 
 <body>
     <header>
         <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent1">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Country
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#"><i
-                                                class="far fa-flag text-primary me-2"></i>India</a></li>
-                                    <li><a class="dropdown-item" href="#"><i
-                                                class="fas fa-flag-usa text-primary me-2"></i>United Status</a></li>
-                                    <li><a class="dropdown-item" href="#"><i
-                                                class="far fa-flag text-primary me-2"></i>Canada </a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link me-3">Help</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link me-3">Contacts</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link me-3"><i class="fas fa-search text-secondary"></i></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link me-3"><i class="fas fa-shopping-cart"></i></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link me-3"><i class="fas fa-user-circle"></i></a>
-                            </li>
-                        </ul>
+            <div class="row">
+                <div class="col-4 col-sm-4 col-md-2 mt-2">
+                    <select class="form-select border-0 mb-1 form-select-sm" style="width: 75%;">
+                        <option value="IN">🇮🇳&emsp;India</option>
+                        <option value="US">🇺🇸&emsp;United States</option>
+                        <option value="NL">🇳🇱&emsp;Netherlands</option>
+                        <option value="DE">🇩🇪&emsp;Germany</option>
+                        <option value="FR">🇫🇷&emsp;France</option>
+                        <option value="ES">🇪🇸&emsp;Spain</option>
+                    </select>
+                </div>
+                <div class="col-8 col-sm-8 col-md-10 text-sm-end text-start mt-2">
+                    <div class="dropdown text-end d-md-none">
+                        <button type="button" class="btn btn-outline-dark btn-sm dropdown-toggle "
+                            data-bs-toggle="dropdown">
+                            <i class="fa fa-cog"></i> Support
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="5b4f95e9a64b5" x-placement="bottom-start"
+                            style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(63px, 31px, 0px);">
+                            <a href='#' class="dropdown-item text-secondary">Help</a>
+                            <a href='#' class="dropdown-item text-secondary">Contacts</a>
+                            <a href="#" class="dropdown-item ms-2"><i class="fas fa-search text-secondary"></i></a>
+                            <a href="#" class="dropdown-item ms-2"><i
+                                    class="fas fa-shopping-cart text-secondary"></i></a>
+                            <a href="#" class="dropdown-item ms-2"><i
+                                    class="fas fa-user-circle text-secondary"></i></i></a>
+                        </div>
+                    </div>
+                    <div class="d-none d-sm-none d-md-block">
+                        <a href="#" class="link-secondary text-decoration-none">Help</a>
+                        <a href="#" class="link-secondary text-decoration-none ms-3">Contacts</a>
+                        <a href="#" class="ms-2"><i class="fas fa-search text-secondary"></i></a>
+                        <a href="#" class="ms-2"><i class="fas fa-shopping-cart text-secondary"></i></a>
+                        <a href="#" class="ms-2"><i class="fas fa-user-circle text-secondary"></i></i></a>
                     </div>
                 </div>
-            </nav>
+            </div>
 
             <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">WebMob Technologies</a>
+                    <a class="navbar-brand" href="#"><img src="../Design-2/images/front-logo.png" alt="front-logo"
+                            class="img-fluid"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -73,67 +89,73 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent2">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item dropdown ms-3">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+                            <li class="nav-item dropdown ms-3 animated_dd1">
+                                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
                                     Home
+                                    <i class='fas fa-angle-down' style='font: size 15px;'></i>
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <ul class="dropdown-menu animated_dd_menu1" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="#">Home1</a></li>
                                     <li><a class="dropdown-item" href="#">Home2</a></li>
                                     <li><a class="dropdown-item" href="#">Home3</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item dropdown ms-3">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+                            <li class="nav-item dropdown ms-3 animated_dd2">
+                                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
                                     Pages
+                                    <i class='fas fa-angle-down' style='font: size 15px;'></i>
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <ul class="dropdown-menu animated_dd_menu2" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="#">Pages1</a></li>
                                     <li><a class="dropdown-item" href="#">Pages2</a></li>
                                     <li><a class="dropdown-item" href="#">Pages3</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item dropdown ms-3">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+                            <li class="nav-item dropdown ms-3 animated_dd3">
+                                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
                                     Blog
+                                    <i class='fas fa-angle-down' style='font: size 15px;'></i>
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <ul class="dropdown-menu animated_dd_menu3" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="#">Blog1</a></li>
                                     <li><a class="dropdown-item" href="#">Blog2</a></li>
                                     <li><a class="dropdown-item" href="#">Blog3</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item dropdown ms-3">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+                            <li class="nav-item dropdown ms-3 animated_dd4">
+                                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
                                     Shop
+                                    <i class='fas fa-angle-down' style='font: size 15px;'></i>
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <ul class="dropdown-menu animated_dd_menu4" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="#">Shop1</a></li>
                                     <li><a class="dropdown-item" href="#">Shop2</a></li>
                                     <li><a class="dropdown-item" href="#">Shop3</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item dropdown ms-3">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+                            <li class="nav-item dropdown ms-3 animated_dd5">
+                                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
                                     Demos
+                                    <i class='fas fa-angle-down' style='font: size 15px;'></i>
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <ul class="dropdown-menu animated_dd_menu5" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="#">Demos1</a></li>
                                     <li><a class="dropdown-item" href="#">Demos2</a></li>
                                     <li><a class="dropdown-item" href="#">Demos3</a></li>
                                 </ul>
                             </li>
-                            <li class="nav-item dropdown ms-3">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
+                            <li class="nav-item dropdown ms-3 animated_dd6">
+                                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
                                     Docs
+                                    <i class='fas fa-angle-down' style='font: size 15px;'></i>
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <ul class="dropdown-menu animated_dd_menu6" aria-labelledby="navbarDropdown">
                                     <li><a class="dropdown-item" href="#">Docs1</a></li>
                                     <li><a class="dropdown-item" href="#">Docs2</a></li>
                                     <li><a class="dropdown-item" href="#">Docs3</a></li>
@@ -182,19 +204,19 @@
 
         <div class="row justify-content-around mt-5 text-center">
             <div class="col-12 col-sm-6 col-md-4 mt-3">
-                <img src="../Bootstrap Exercise/images/logo-image-1.png" alt="logo-1" width="100" height="100">
+                <img src="../Design-2/images/logo-image-1.png" alt="logo-1" width="100" height="100">
                 <p class="lead mt-2"><b>Professional Design</b></p>
                 <small class="text-secondary text-center">Achieve virtually any design and layout from within the one
                     template.</small>
             </div>
             <div class="col-12 col-sm-6 col-md-4 mt-3">
-                <img src="../Bootstrap Exercise/images/logo_image_2.png" alt="logo-2" width="100" height="100">
+                <img src="../Design-2/images/logo_image_2.png" alt="logo-2" width="100" height="100">
                 <p class="lead mt-2"><b>Front Strategy</b></p>
                 <small class="text-secondary text-center">We strive to figure out ways to help your business grow
                     through all platforms.</small>
             </div>
             <div class="col-12 col-sm-12 col-md-4 mt-3">
-                <img src="../Bootstrap Exercise/images/logo_image_3.png" alt="logo-3" width="100" height="100">
+                <img src="../Design-2/images/logo_image_3.png" alt="logo-3" width="100" height="100">
                 <p class="lead mt-2"><b>Unlimited Power</b></p>
                 <small class="text-secondary text-center">Find what you need in one template and combine features at
                     will.</small>
@@ -203,7 +225,7 @@
 
         <div class="row">
             <div class="col">
-                <img src="../Bootstrap Exercise/images/image_4.png" class="img-fluid" alt="borders">
+                <img src="../Design-2/images/image_4.png" class="img-fluid" alt="borders">
             </div>
         </div>
         <div class="row">
@@ -248,7 +270,7 @@
             </div>
 
             <div class="col-12 col-sm-12 col-md-12 col-xl-8 mt-5">
-                <div class="row g-3">
+                <div class="row g-4">
                     <div class="col-12 col-sm-6 d-flex justify-content-center align-items-center">
                         <div class="card border-0 shadow">
                             <img src="https://d33wubrfki0l68.cloudfront.net/0a619155c82b694e2267f3ed5c752919b707e33b/ef36f/static/svg_waves-3c1f0a785319462f6dce04d227eaf664.jpg"
@@ -333,20 +355,33 @@
 
         <!-- card carousel -->
 
-        <div class="row">
 
+        <div class="row">
             <div
                 class="col-1 flex-row justify-content-center align-items-center d-none d-sm-none d-md-flex d-lg-flex d-xl-flex d-xxl-flex">
                 <button class="control-prev rounded-circle border-0 ms-4"
                     style="font-size: 20px;background-color: #E1EEFF;" type="button"
-                    data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    data-bs-target="#carouselExampleCaptions1" data-bs-slide="prev">
                     <span class="fas fa-arrow-left text-primary" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
             </div>
 
-            <div class="col-12 col-sm-12 col-md-10">
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- for desktop -->
+            <div class="col-12 col-sm-12 col-md-10 d-none d-sm-none d-md-block">
+                <div id="carouselExampleCaptions1" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0"
+                            class="active carousel-indicators-round rounded-circle p-1 m-2 bg-primary"
+                            style="width: 5px; height: 5px;" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1"
+                            class="carousel-indicators-round rounded-circle p-1 m-2 bg-primary"
+                            style="width: 5px; height: 5px;" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="2"
+                            class="carousel-indicators-round rounded-circle p-1 m-2 bg-primary"
+                            style="width: 5px; height: 5px;" aria-label="Slide 3"></button>
+                    </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <div class="col-md-4" style="float:left">
@@ -433,7 +468,7 @@
                             </div>
 
                             <div class="col-md-4" style="float:left">
-                                <div class="card image_card1 h-100 mb-3">
+                                <div class="card image_card1 h-100 mb-3 ">
                                     <img src="https://images.pexels.com/photos/1499327/pexels-photo-1499327.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
                                         class="card-img-top overlay_image shadow" alt="profile5">
                                     <div class="card-img-overlay">
@@ -449,6 +484,7 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="col-md-4" style="float:left">
                                 <div class="card image_card1 h-100 mb-3">
                                     <img src="https://images.pexels.com/photos/4065187/pexels-photo-4065187.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
@@ -526,36 +562,248 @@
                 </div>
             </div>
 
+            <!-- for mobiles -->
+            <div class="col-12 col-sm-12 col-md-10 d-block d-sm-block d-md-none">
+                <div id="carouselExampleCaptions2" class="carousel slide" data-bs-ride="carousel">
+                    <div class="row">
+                        <div class="col">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0"
+                                    class="active carousel-indicators-round rounded-circle p-1 m-2 bg-primary"
+                                    aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1"
+                                    class="carousel-indicators-round rounded-circle p-1 m-2 bg-primary"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2"
+                                    class="carousel-indicators-round rounded-circle p-1 m-2 bg-primary"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="3"
+                                    class="carousel-indicators-round rounded-circle p-1 m-2 bg-primary"
+                                    aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="4"
+                                    class="carousel-indicators-round rounded-circle p-1 m-2 bg-primary"
+                                    aria-label="Slide 5"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="5"
+                                    class="carousel-indicators-round rounded-circle p-1 m-2 bg-primary"
+                                    aria-label="Slide 6"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="6"
+                                    class="carousel-indicators-round rounded-circle p-1 m-2 bg-primary"
+                                    aria-label="Slide 7"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="7"
+                                    class="carousel-indicators-round rounded-circle p-1 m-2 bg-primary"
+                                    aria-label="Slide 8"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="8"
+                                    class="carousel-indicators-round rounded-circle p-1 m-2 bg-primary"
+                                    aria-label="Slide 9"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="col-md-4" style="float:left">
+                                <div class="card image_card1 h-100 mb-3">
+                                    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                        class="card-img-top overlay_image shadow" alt="profile1">
+                                    <div class="card-img-overlay">
+                                        <div class="row middle h-100 justify-content-end align-items-end">
+                                            <div class=" col-lg-12  col-sm-12 text mb-3">
+                                                <p class="lead text-dark"><b>How to make trust your competitive
+                                                        advantage</b></p>
+                                                <p class="lead text-secondary"><b>Neyton Burchie</b></p>
+                                                <img src="https://www.clipartmax.com/png/full/100-1005846_waiter-free-icon-avatar-profile-circle-png.png"
+                                                    alt="card profile" class="rounded-circle" width="60" height="60">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="col-md-4" style="float:left">
+                                <div class="card image_card2 h-100 mb-3">
+                                    <img src="https://images.pexels.com/photos/413959/pexels-photo-413959.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                        class="card-img-top overlay_image2 shadow" alt="profile3">
+                                    <div class="card-img-overlay">
+                                        <div class="row middle2 h-100 justify-content-center align-items-center">
+                                            <div class=" col-lg-12  col-sm-12 text2">
+                                                <p class="lead text-dark">"How to help you team excel at remote
+                                                    collabration. Here are tips and tools we use on the content team at
+                                                    InVision to keep our remote collaboration game strong. Trust is both
+                                                    a
+                                                    complex and nuanced topic. Its very nature makes it difficult to
+                                                    tackle
+                                                    through direct effort."</p>
+                                                <p class="lead text-dark fw-bold">Keith Margaret</p>
+                                                <img src="https://buffer.com/library/content/images/2020/05/Kevan-Lee.png"
+                                                    alt="card profile" width="60" height="60">
+                                                <div class="text-center">
+                                                    <button type="button" class="btn text-primary btn-sm mt-2"
+                                                        style="background-color: #E8F2FF;">Read more</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="col-md-4" style="float:left">
+                                <div class="card image_card1 h-100 mb-3">
+                                    <img src="https://images.pexels.com/photos/1043471/pexels-photo-1043471.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                        class="card-img-top overlay_image shadow" alt="profile2">
+                                    <div class="card-img-overlay">
+                                        <div class="row middle h-100 justify-content-end align-items-end">
+                                            <div class=" col-lg-12  col-sm-12 text mb-3">
+                                                <p class="lead text-dark"><b>Remote workers, here's how to dodge
+                                                        distractions</b></p>
+                                                <p class="lead text-secondary"><b>Tina Krueger</b></p>
+                                                <img src="https://buffer.com/library/content/images/2020/05/Kevan-Lee.png"
+                                                    alt="card profile" width="60" height="60">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="col-md-4" style="float:left">
+                                <div class="card image_card1 h-100 mb-3">
+                                    <img src="https://images.pexels.com/photos/1559486/pexels-photo-1559486.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                        class="card-img-top overlay_image shadow" alt="profile4">
+                                    <div class="card-img-overlay">
+                                        <div class="row middle h-100 justify-content-end align-items-end">
+                                            <div class=" col-lg-12  col-sm-12 text mb-3">
+                                                <p class="lead text-dark"><b>How to make trust your competitive
+                                                        advantage</b></p>
+                                                <p class="lead text-secondary"><b>Neyton Burchie</b></p>
+                                                <img src="https://www.clipartmax.com/png/full/100-1005846_waiter-free-icon-avatar-profile-circle-png.png"
+                                                    alt="card profile" class="rounded-circle" width="60" height="60">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="col-md-4" style="float:left">
+                                <div class="card image_card1 h-100 mb-3">
+                                    <img src="https://images.pexels.com/photos/1499327/pexels-photo-1499327.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                        class="card-img-top overlay_image shadow" alt="profile5">
+                                    <div class="card-img-overlay">
+                                        <div class="row middle h-100 justify-content-end align-items-end">
+                                            <div class=" col-lg-12  col-sm-12 text mb-3">
+                                                <p class="lead text-dark"><b>How to make trust your competitive
+                                                        advantage</b></p>
+                                                <p class="lead text-secondary"><b>Neyton Burchie</b></p>
+                                                <img src="https://www.clipartmax.com/png/full/100-1005846_waiter-free-icon-avatar-profile-circle-png.png"
+                                                    alt="card profile" class="rounded-circle" width="60" height="60">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="col-md-4" style="float:left">
+                                <div class="card image_card1 h-100 mb-3">
+                                    <img src="https://images.pexels.com/photos/4065187/pexels-photo-4065187.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                        class="card-img-top overlay_image shadow" alt="profile6">
+                                    <div class="card-img-overlay">
+                                        <div class="row middle h-100 justify-content-end align-items-end">
+                                            <div class=" col-lg-12  col-sm-12 text mb-3">
+                                                <p class="lead text-dark"><b>How to make trust your competitive
+                                                        advantage</b></p>
+                                                <p class="lead text-secondary"><b>Neyton Burchie</b></p>
+                                                <img src="https://www.clipartmax.com/png/full/100-1005846_waiter-free-icon-avatar-profile-circle-png.png"
+                                                    alt="card profile" class="rounded-circle" width="60" height="60">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="col-md-4" style="float:left">
+                                <div class="card image_card1 h-100 mb-3">
+                                    <img src="https://images.pexels.com/photos/139829/pexels-photo-139829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                        class="card-img-top overlay_image shadow" alt="profile7">
+                                    <div class="card-img-overlay">
+                                        <div class="row middle h-100 justify-content-end align-items-end">
+                                            <div class=" col-lg-12  col-sm-12 text mb-3">
+                                                <p class="lead text-dark"><b>How to make trust your competitive
+                                                        advantage</b></p>
+                                                <p class="lead text-secondary"><b>Neyton Burchie</b></p>
+                                                <img src="https://www.clipartmax.com/png/full/100-1005846_waiter-free-icon-avatar-profile-circle-png.png"
+                                                    alt="card profile" class="rounded-circle" width="60" height="60">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="col-md-4" style="float:left">
+                                <div class="card image_card1 h-100 mb-3">
+                                    <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                        class="card-img-top overlay_image shadow" alt="profile8">
+                                    <div class="card-img-overlay">
+                                        <div class="row middle h-100 justify-content-end align-items-end">
+                                            <div class=" col-lg-12  col-sm-12 text mb-3">
+                                                <p class="lead text-dark"><b>How to make trust your competitive
+                                                        advantage</b></p>
+                                                <p class="lead text-secondary"><b>Neyton Burchie</b></p>
+                                                <img src="https://www.clipartmax.com/png/full/100-1005846_waiter-free-icon-avatar-profile-circle-png.png"
+                                                    alt="card profile" class="rounded-circle" width="60" height="60">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="col-md-4" style="float:left">
+                                <div class="card image_card1 h-100 mb-3">
+                                    <img src="https://images.pexels.com/photos/1987301/pexels-photo-1987301.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                                        class="card-img-top overlay_image shadow" alt="profile9">
+                                    <div class="card-img-overlay">
+                                        <div class="row middle h-100 justify-content-end align-items-end">
+                                            <div class=" col-lg-12  col-sm-12 text mb-3">
+                                                <p class="lead text-dark"><b>How to make trust your competitive
+                                                        advantage</b></p>
+                                                <p class="lead text-secondary"><b>Neyton Burchie</b></p>
+                                                <img src="https://www.clipartmax.com/png/full/100-1005846_waiter-free-icon-avatar-profile-circle-png.png"
+                                                    alt="card profile" class="rounded-circle" width="60" height="60">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
             <div
                 class="col-1 flex-row justify-content-center align-items-center d-none d-sm-none d-md-flex d-lg-flex d-xl-flex d-xxl-flex">
                 <button class="control-next rounded-circle border-0 me-4"
                     style="font-size: 20px;background-color: #E1EEFF;" type="button"
-                    data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    data-bs-target="#carouselExampleCaptions1" data-bs-slide="next">
                     <span class="fas fa-arrow-right text-primary" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-
-            <div class="row text-center">
-                <div class="col-12">
-                    <div class="indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                            class="active rounded-circle p-1 m-2 bg-primary border-0 custom-indicator"
-                            aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                            class="rounded-circle p-1 m-2 bg-primary border-0 custom-indicator"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                            class="rounded-circle p-1 m-2 bg-primary border-0 custom-indicator"
-                            aria-label="Slide 3"></button>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
-
-
 
 
     <!-- footer -->

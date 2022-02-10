@@ -9,12 +9,16 @@ body {
     height: 70vh;
 }
 
-.custom-indicator {
-    opacity: 0.2;
+.carousel-indicators {
+    bottom: -8%;
 }
 
-.custom-indicator.active {
-    opacity: 0.8;
+.carousel-indicators-round.active {
+    opacity: 1 !important;
+}
+
+.carousel-indicators-round {
+    opacity: 0.2 !important;
 }
 
 .col-md-4>div {
